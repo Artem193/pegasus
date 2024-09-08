@@ -41,7 +41,7 @@ export const Header = () => {
         </nav>
       </header>
       <ul className={`menuList ${isMenuOpen ? 'menuList--active' : 'menuList--hidden'}`} id="menuList">
-        <MenuItemPhone page={'page1'} link={'/'}/>
+        <MenuItemPhone page={'Home'} link={'/'}/>
         <MenuItemPhone page={'page2'} link={'/about'}/>
         <MenuItemPhone page={'page3'}/>
         <MenuItemPhone page={'page4'}/>
