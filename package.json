@@ -1,6 +1,5 @@
 {
   "name": "pegasus",
-  "homepage": "https://artem193.github.io/pegasus",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
