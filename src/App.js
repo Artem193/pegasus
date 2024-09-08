@@ -4,9 +4,11 @@ import './App.scss';
 import { Home } from './components/pages/home/Home';
 import { About } from './components/pages/about/About';
 
+const basename = '/pegasus';
+
 function App() {
   return (
-    <Router>
+    <Router basename={basename}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
