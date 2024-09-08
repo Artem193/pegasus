@@ -1,0 +1,16 @@
+.reviews {
+  margin-bottom: 50px;
+
+  &__title {
+    margin: 0 0 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: #274A3F;
+
+    @media (min-width: 1024px) {
+      font-size: 48px;
+      margin: 0 0 45px;
+    }
+  }
+}

@@ -1,0 +1,114 @@
+.services {
+  &__title {
+    margin: 0 0 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: #274A3F;
+
+    @media (min-width: 1024px) {
+      font-size: 48px;
+      margin: 0 0 45px;
+    }
+  }
+
+  &__types {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      gap: 50px;
+    }
+  }
+
+  &__service {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 1px 1px 4px #274A3F;
+    padding: 20px 8px;
+    max-width: 400px;
+
+    @media (min-width: 1024px) {
+      padding: 30px 8px;
+      min-height: 550px;
+    }
+  }
+
+  &__subtitle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #274A3F;
+    text-align: center;
+    border-bottom: solid 1px #FFD700;
+
+    @media (min-width: 1024px) {
+      padding-bottom: 30px;
+      font-size: 22px;
+    }
+  }
+
+  &__descriptions {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__description {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+  }
+
+  &__image {
+    background-image: url(../../../../../images/itemArrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 25px;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 16px;
+    color: #274A3F;
+    font-weight: 400;
+
+    @media (min-width: 1024px) {
+      font-size: 20px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #274A3F;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FFD700;
+    height: max-content;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+    padding: 5px 10px;
+    min-height: 35px;
+  }
+}

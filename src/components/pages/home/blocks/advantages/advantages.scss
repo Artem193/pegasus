@@ -1,0 +1,93 @@
+.advantages {
+  &__title {
+    margin: 0 0 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: #274A3F;
+
+    @media (min-width: 1024px) {
+      font-size: 48px;
+      margin: 0 0 45px;
+    }
+  }
+
+  &__types {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      gap: 50px;
+    }
+  }
+
+  &__advantage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 1px 1px 4px #274A3F;
+    padding: 20px 8px;
+    max-width: 400px;
+
+    @media (min-width: 1024px) {
+      padding: 30px 8px;
+      min-height: 550px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &--1 {
+      background-image: url(../../../../../images/homeBlock1.jpg);
+    }
+
+    &--2 {
+      background-image: url(../../../../../images/homeBlock2.jpg);
+    }
+
+    &--3 {
+      background-image: url(../../../../../images/homeBlock3.jpg);
+    }
+  }
+
+  &__subtitle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #274A3F;
+    text-align: center;
+    border-bottom: solid 1px #FFD700;
+
+    @media (min-width: 1024px) {
+      padding-bottom: 30px;
+      font-size: 22px;
+    }
+  }
+
+  &__description {
+    margin: 0 0 10px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #274A3F;
+    font-weight: 400;
+    text-align: center;
+
+    @media (min-width: 1024px) {
+      font-size: 20px;
+    }
+  }
+}

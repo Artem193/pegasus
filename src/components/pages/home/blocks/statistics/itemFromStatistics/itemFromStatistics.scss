@@ -1,0 +1,21 @@
+.itemFromStatistics {
+
+  &__numbers {
+    margin: 0;
+    font-size: 40px;
+
+    @media (min-width: 1024px) {
+      font-size: 60px;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 600;
+
+    @media (min-width: 1024px) {
+      max-width: 300px;
+      font-size: 22px;
+    }
+  }
+}
