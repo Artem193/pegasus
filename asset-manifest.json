@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/pegasus/static/css/main.b3c2c521.css",
-    "main.js": "/pegasus/static/js/main.69a2aa0c.js",
-    "static/media/departmentsPhoto2.jpg": "/pegasus/static/media/departmentsPhoto2.b4c256506e843c32c679.jpg",
-    "static/media/departmentsPhoto4.jpg": "/pegasus/static/media/departmentsPhoto4.a81c29ec774c5ce846e7.jpg",
-    "static/media/departmentsPhoto3.png": "/pegasus/static/media/departmentsPhoto3.291ee9642b556d881bbb.png",
-    "static/media/departmentsPhoto1.jpg": "/pegasus/static/media/departmentsPhoto1.f623d09d61324652f2fd.jpg",
+    "main.css": "/pegasus/static/css/main.e1d90aae.css",
+    "main.js": "/pegasus/static/js/main.14b0169b.js",
+    "static/media/departmentsPhoto3.png": "/pegasus/static/media/departmentsPhoto3.ec91c673f4c078ba4196.png",
     "static/media/basic1.png": "/pegasus/static/media/basic1.f15d8ae64dfef998dc13.png",
     "static/media/basic2.png": "/pegasus/static/media/basic2.c92fd7ba305645ea6853.png",
     "static/media/articlesPhoto2.png": "/pegasus/static/media/articlesPhoto2.cd861f2b6ab2ee7086b8.png",
     "static/media/homeBlock1.jpg": "/pegasus/static/media/homeBlock1.31f96f447b9171fee4e1.jpg",
+    "static/media/departmentsPhoto2.jpg": "/pegasus/static/media/departmentsPhoto2.1df87c975fbbc90214f3.jpg",
     "static/media/homeBlock2.jpg": "/pegasus/static/media/homeBlock2.83cd1e0089e67011dafb.jpg",
     "static/media/articlesPhoto5.png": "/pegasus/static/media/articlesPhoto5.2eda91b91348def75490.png",
     "static/media/articlesPhoto6.png": "/pegasus/static/media/articlesPhoto6.2bb1eb5a37464b9288f3.png",
@@ -18,6 +16,8 @@
     "static/media/articlesPhoto1.png": "/pegasus/static/media/articlesPhoto1.b2d36b462ffa4070cdba.png",
     "static/media/wpFix.svg": "/pegasus/static/media/wpFix.eca67a8fb67b85a5b089.svg",
     "static/media/homeBlock3.jpg": "/pegasus/static/media/homeBlock3.b756ad8b0872d4cb43db.jpg",
+    "static/media/departmentsPhoto4.jpg": "/pegasus/static/media/departmentsPhoto4.c23bccdd7da3edd5cfd8.jpg",
+    "static/media/departmentsPhoto1.jpg": "/pegasus/static/media/departmentsPhoto1.dc18262e342489ded2bf.jpg",
     "static/media/wp.png": "/pegasus/static/media/wp.c826b0165560636baf0b.png",
     "static/media/favicon.svg": "/pegasus/static/media/favicon.6fc92ccde37656c61c38.svg",
     "static/media/logo.svg": "/pegasus/static/media/logo.6fc92ccde37656c61c38.svg",
@@ -28,11 +28,11 @@
     "static/media/itemArrow.svg": "/pegasus/static/media/itemArrow.88c6fedebd9568420a01.svg",
     "index.html": "/pegasus/index.html",
     "static/media/menu.svg": "/pegasus/static/media/menu.60d8c87f0b9dfa4212cf.svg",
-    "main.b3c2c521.css.map": "/pegasus/static/css/main.b3c2c521.css.map",
-    "main.69a2aa0c.js.map": "/pegasus/static/js/main.69a2aa0c.js.map"
+    "main.e1d90aae.css.map": "/pegasus/static/css/main.e1d90aae.css.map",
+    "main.14b0169b.js.map": "/pegasus/static/js/main.14b0169b.js.map"
   },
   "entrypoints": [
-    "static/css/main.b3c2c521.css",
-    "static/js/main.69a2aa0c.js"
+    "static/css/main.e1d90aae.css",
+    "static/js/main.14b0169b.js"
   ]
 }
