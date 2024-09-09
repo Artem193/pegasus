@@ -1,3 +1,5 @@
+// 
+
 .formWhite {
   display: flex;
   flex-direction: column;
@@ -12,6 +14,10 @@
   @media (min-width: 1024px) {
     width: 900px;
     font-size: 30px;
+  }
+
+  &.animate {
+    animation: fadeIn 1s ease-out;
   }
 
   &__subtitle {
@@ -81,39 +87,49 @@
     font-size: 15px;
     padding-left: 10px;
     box-sizing: border-box;
-  
+
     @media (min-width: 1024px) {
       height: 35px;
       margin: 0;
       font-size: 20px;
       padding-left: 15px;
     }
-  
+
     &--submit {
       color: #274A3F;
       background-color: #FFD700;
       font-weight: 600;
       font-size: 18px;
       cursor: pointer;
-  
+
       @media (min-width: 1024px) {
         font-size: 22px;
       }
     }
-  
+
     &:focus {
-      border: 2px, solid;
-      border-color: #274A3F;
+      border: 2px solid #274A3F;
       outline: none;
     }
-  
+
     &::placeholder {
       color: #808080;
       font-size: 15px;
-  
+
       @media (min-width: 1024px) {
         font-size: 20px;
       }
     }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

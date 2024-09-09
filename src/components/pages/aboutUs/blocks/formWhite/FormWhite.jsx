@@ -1,9 +1,19 @@
-import React from "react";
+import React from 'react';
+import { useInView } from 'react-intersection-observer';
 import './formWhite.scss';
 
 export const FormWhite = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true, // анімація відбудеться тільки один раз
+    threshold: 0.1, // поріг видимості елемента (10%)
+  });
+
   return (
-    <form action="" className='formWhite'>
+    <form
+      action=""
+      className={`formWhite ${inView ? 'animate' : ''}`}
+      ref={ref}
+    >
       <h2 className="formWhite__subtitle">
         Хотите задать дополнительные вопросы?
       </h2>
