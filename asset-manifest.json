@@ -1,7 +1,11 @@
 {
   "files": {
-    "main.css": "/pegasus/static/css/main.6e8756ed.css",
-    "main.js": "/pegasus/static/js/main.87d8b032.js",
+    "main.css": "/pegasus/static/css/main.b3c2c521.css",
+    "main.js": "/pegasus/static/js/main.69a2aa0c.js",
+    "static/media/departmentsPhoto2.jpg": "/pegasus/static/media/departmentsPhoto2.b4c256506e843c32c679.jpg",
+    "static/media/departmentsPhoto4.jpg": "/pegasus/static/media/departmentsPhoto4.a81c29ec774c5ce846e7.jpg",
+    "static/media/departmentsPhoto3.png": "/pegasus/static/media/departmentsPhoto3.291ee9642b556d881bbb.png",
+    "static/media/departmentsPhoto1.jpg": "/pegasus/static/media/departmentsPhoto1.f623d09d61324652f2fd.jpg",
     "static/media/basic1.png": "/pegasus/static/media/basic1.f15d8ae64dfef998dc13.png",
     "static/media/basic2.png": "/pegasus/static/media/basic2.c92fd7ba305645ea6853.png",
     "static/media/articlesPhoto2.png": "/pegasus/static/media/articlesPhoto2.cd861f2b6ab2ee7086b8.png",
@@ -24,11 +28,11 @@
     "static/media/itemArrow.svg": "/pegasus/static/media/itemArrow.88c6fedebd9568420a01.svg",
     "index.html": "/pegasus/index.html",
     "static/media/menu.svg": "/pegasus/static/media/menu.60d8c87f0b9dfa4212cf.svg",
-    "main.6e8756ed.css.map": "/pegasus/static/css/main.6e8756ed.css.map",
-    "main.87d8b032.js.map": "/pegasus/static/js/main.87d8b032.js.map"
+    "main.b3c2c521.css.map": "/pegasus/static/css/main.b3c2c521.css.map",
+    "main.69a2aa0c.js.map": "/pegasus/static/js/main.69a2aa0c.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e8756ed.css",
-    "static/js/main.87d8b032.js"
+    "static/css/main.b3c2c521.css",
+    "static/js/main.69a2aa0c.js"
   ]
 }
