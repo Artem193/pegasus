@@ -5,14 +5,13 @@ export const ItemFromStatistics = ({ numbers, text, duration = 2000 }) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    // Перевіряємо, чи значення містить відсоток
     const isPercentage = numbers.includes("%");
-    const end = isPercentage ? parseInt(numbers.replace("%", ""), 10) : parseInt(numbers, 10); // Кінцеве значення
-    let start = 0; // Початкове значення
-    const increment = end / (duration / 10); // Розраховуємо приріст значення
+    const end = isPercentage ? parseInt(numbers.replace("%", ""), 10) : parseInt(numbers, 10);
+    let start = 0;
+    const increment = end / (duration / 10); 
 
     const timer = setInterval(() => {
-      start += increment; // Збільшуємо поточне значення
+      start += increment;
       if (start >= end) {
         setCount(end);
         clearInterval(timer);
@@ -28,7 +27,7 @@ export const ItemFromStatistics = ({ numbers, text, duration = 2000 }) => {
     <div className="itemFromStatistics">
       <p className="itemFromStatistics__numbers color-yellow">
         {count}
-        {numbers.includes("%") ? "%" : ""} {/* Додаємо % тільки якщо було у початковому значенні */}
+        {numbers.includes("%") ? "%" : ""}
       </p>
       <p className="itemFromStatistics__text color-yellow">{text}</p>
     </div>

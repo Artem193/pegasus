@@ -1,10 +1,10 @@
 .formGreen {
-  margin: 0 -10px 30px;
+  margin: 0 -10px 80px;
   padding: 20px 10px;
   background-color: #274A3F;
 
   @media (min-width: 1024px) {
-    margin: 0 -18px 50px;
+    margin: 0 -18px 100px;
     padding: 20px 18px;
   }
 
@@ -50,6 +50,7 @@
       background-color: #FFD700;
       font-weight: 600;
       font-size: 18px;
+      cursor: pointer;
   
       @media (min-width: 1024px) {
         font-size: 22px;

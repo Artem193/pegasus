@@ -1,4 +1,10 @@
 .advantages {
+  margin-bottom: 80px;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 100px;
+  }
+
   &__title {
     margin: 0 0 30px;
     text-align: center;

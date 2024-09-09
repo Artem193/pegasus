@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 import { MenuItem } from "./menuItem/MenuItem";
 import { MenuItemPhone } from "./menuItemPhone/MenuItemPhone";
 
@@ -23,11 +24,11 @@ export const Header = () => {
         <nav className="header__nav">
           <button className="header__menu" onClick={toggleMenu}></button>
           <div className="header__items header__items--part1">
-            <MenuItem page={'Page1'} link={'/'}/>
-            <MenuItem page={'Page2'} link={'/about'}/>
+            <MenuItem page={'Главная'} link={'/'}/>
+            <MenuItem page={'О нас'} link={'/aboutUs'}/>
             <MenuItem page={'Page3'} />
           </div>
-          <a href="#" className="header__logo"></a>
+          <Link to="/" className="header__logo"></Link>
           <div className="header__items header__items--part2">
             <MenuItem page={'Page4'} />
             <MenuItem page={'Page5'} />
@@ -41,8 +42,8 @@ export const Header = () => {
         </nav>
       </header>
       <ul className={`menuList ${isMenuOpen ? 'menuList--active' : 'menuList--hidden'}`} id="menuList">
-        <MenuItemPhone page={'page1'} link={'/'}/>
-        <MenuItemPhone page={'page2'} link={'/about'}/>
+        <MenuItemPhone page={'Главная'} link={'/'}/>
+        <MenuItemPhone page={'О нас'} link={'/aboutUs'}/>
         <MenuItemPhone page={'page3'}/>
         <MenuItemPhone page={'page4'}/>
         <MenuItemPhone page={'page5'}/>

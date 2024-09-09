@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import './footer.scss';
 
 export const Footer = () => {
@@ -7,7 +8,7 @@ export const Footer = () => {
       <div className="page__container">
         <div className="footer__content">
           <div className="footer__logo">
-            <div className="footer__logo--img"></div>
+            <Link to="/" className="footer__logo--img"></Link>
             <h1 className="footer__logo--title">Pegasus</h1>
           </div>
           <div className="footer__contacts">

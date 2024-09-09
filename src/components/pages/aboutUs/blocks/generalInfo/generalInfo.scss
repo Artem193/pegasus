@@ -1,0 +1,48 @@
+.generalInfo {
+  margin-bottom: 80px;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 100px;
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: #274A3F;
+    margin: 0;
+
+    @media (min-width: 1024px) {
+      font-size: 48px;
+      margin: 0;
+    }
+  }
+
+  &__subtitle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #274A3F;
+    text-align: center;
+
+    @media (min-width: 1024px) {
+      font-size: 22px;
+    }
+  }
+
+  &__text {
+    margin: 0 0 30px;
+    font-size: 16px;
+    color: #274A3F;
+    font-weight: 400;
+    text-indent: 20px;
+
+    @media (min-width: 1024px) {
+      font-size: 20px;
+    }
+  }
+}

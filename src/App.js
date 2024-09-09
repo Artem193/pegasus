@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.scss';
 
 import { Home } from './components/pages/home/Home';
-import { About } from './components/pages/about/About';
+import { AboutUs } from './components/pages/aboutUs/AboutUs';
 
 const basename = '/pegasus';
 
@@ -11,7 +11,7 @@ function App() {
     <Router basename={basename}>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/aboutUs" element={<AboutUs />} />
       </Routes>
     </Router>
   );
