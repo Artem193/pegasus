@@ -1,5 +1,3 @@
-// 
-
 .formWhite {
   display: flex;
   flex-direction: column;
@@ -17,7 +15,7 @@
   }
 
   &.animate {
-    animation: fadeIn 1s ease-out;
+    animation: fadeIn 2s ease-out;
   }
 
   &__subtitle {
@@ -104,6 +102,11 @@
 
       @media (min-width: 1024px) {
         font-size: 22px;
+      }
+
+      &:hover {
+        background-color: #274A3F;
+        color: #FFFFEC;
       }
     }
 

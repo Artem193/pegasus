@@ -2,11 +2,15 @@
   @media (min-width: 1024px) {
     text-decoration: none;
     color: #FFFFEC;
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 500;
 
     &:hover {
       color: #FFD700;
     }
+  }
+
+  @media (min-width: 1404px) {
+    font-size: 22px;
   }
 }

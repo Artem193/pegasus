@@ -116,5 +116,10 @@
     font-weight: 600;
     padding: 5px 10px;
     min-height: 35px;
+
+    &:hover {
+      background-color: #274A3F;
+      color: #FFFFEC;
+    }
   }
 }

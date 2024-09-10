@@ -1,0 +1,13 @@
+.statisticWithForm {
+  display: flex;
+  flex-direction: column;
+  margin: 0 -10px 0;
+  background-color: #274A3F;;
+  gap: 50px;
+  margin-bottom: 80px;
+
+  @media (min-width: 1024px) {
+    margin: 0 -18px 0;
+    margin-bottom: 100px;
+  }
+}

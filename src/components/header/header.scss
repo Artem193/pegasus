@@ -92,11 +92,16 @@
 
     &--wp {
       background-image: url(../../images/wp.png);
+      transition: transform 0.7s ease;
 
 
       @media (min-width: 1024px) {
         width: 50px;
         height: 50px;
+      }
+
+      &:hover {
+        transform: scale(1.1);
       }
     }
 
@@ -138,6 +143,7 @@
   cursor: pointer;
   right: 18px;
   border: none;
+  transition: transform 0.7s ease;
 
   &--wp {
     background-image: url(../../images/wpFix.svg);
@@ -147,11 +153,16 @@
     background-position: center;
     background-size: cover;
     bottom: 70px;
+    transition: transform 0.7s ease;
 
     @media (min-width: 1024px) {
       width: 70px;
       height: 70px;
       bottom: 90px;
+    }
+
+    &:hover {
+      transform: scale(1.1);
     }
   }
 
@@ -163,16 +174,23 @@
     background-color: #FFD700;
     color: #274A3F;
     font-weight: 500;
+    transition: transform 0.7s ease;
 
     @media (min-width: 1024px) {
       width: 180px;
       height: 60px;
       font-size: 20px;
     }
+
+    &:hover {
+      background-color: #274A3F;
+      color: #FFFFEC;
+    }
   }
 
   &--phone {
     visibility: hidden;
+    transition: transform 0.7s ease;
 
     @media (min-width: 1024px) {
       visibility: visible;
@@ -186,6 +204,10 @@
       text-decoration: none;
       color: #274A3F;
     }
+  }
+
+  &:hover {
+    transform: scale(1.1);
   }
 }
 
@@ -270,6 +292,11 @@
 
       @media (min-width: 1024px) {
         font-size: 25px;
+      }
+
+      &:hover {
+        background-color: #274A3F;
+        color: #FFFFEC;
       }
     }
 

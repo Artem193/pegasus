@@ -26,7 +26,7 @@ export const Header = () => {
           <div className="header__items header__items--part1">
             <MenuItem page={'Главная'} link={'/'}/>
             <MenuItem page={'О нас'} link={'/aboutUs'}/>
-            <MenuItem page={'Page3'} />
+            <MenuItem page={'Объединение кредитов'} link={'/creditUnion'}/>
           </div>
           <Link to="/" className="header__logo"></Link>
           <div className="header__items header__items--part2">
@@ -44,7 +44,7 @@ export const Header = () => {
       <ul className={`menuList ${isMenuOpen ? 'menuList--active' : 'menuList--hidden'}`} id="menuList">
         <MenuItemPhone page={'Главная'} link={'/'}/>
         <MenuItemPhone page={'О нас'} link={'/aboutUs'}/>
-        <MenuItemPhone page={'page3'}/>
+        <MenuItemPhone page={'Объединение кредитов'} link={'/creditUnion'}/>
         <MenuItemPhone page={'page4'}/>
         <MenuItemPhone page={'page5'}/>
         <MenuItemPhone page={'page6'}/>

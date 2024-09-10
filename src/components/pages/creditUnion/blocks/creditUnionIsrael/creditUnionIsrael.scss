@@ -1,0 +1,95 @@
+.creditUnionIsrael {
+  margin-bottom: 80px;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 100px;
+  }
+
+  &__background {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+    }
+  }
+
+  &__photo {
+    background-image: url(../../../../../images/creditUnionIsrael.png);
+    flex: 1;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__color {
+    flex: 1;
+    max-width: 100%;
+  }
+
+  &__blockForm {
+    background-color: #FFFFEC;
+    position: absolute;
+    top: 300px;
+    margin: 20px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 3px 3px 12px #274A3F;
+    padding: 20px 8px;
+
+    @media (min-width: 1024px) {
+      padding: 30px 8px;
+      width: 600px;
+      top: 130px;
+      left: 44%;
+    
+    }
+  }
+
+  &__title {
+    margin: 0 0 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: #FFD700;
+
+    @media (min-width: 1024px) {
+      font-size: 48px;
+      margin: 0 0 45px;
+    }
+  }
+
+  &__text {
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: #274A3F;
+    font-weight: 400;
+
+    @media (min-width: 1024px) {
+      font-size: 20px;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFD700;
+
+    @media (min-width: 1024px) {
+      padding-bottom: 30px;
+      font-size: 22px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #5C8F81;
+  }
+}

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./itemFromStatistics.scss";
+import "./itemFromCredit.scss";
 
-export const ItemFromStatistics = ({ numbers, text, duration = 2000 }) => {
+export const ItemFromCredit = ({ numbers, text, duration = 2000 }) => {
   const [count, setCount] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
@@ -52,12 +52,12 @@ export const ItemFromStatistics = ({ numbers, text, duration = 2000 }) => {
   }, [isVisible, numbers, duration]);
 
   return (
-    <div className="itemFromStatistics" ref={ref}>
-      <p className="itemFromStatistics__numbers color-yellow">
+    <div className="itemFromCredit" ref={ref}>
+      <p className="itemFromCredit__numbers color-yellow">
         {count}
         {numbers.includes("%") ? "%" : ""}
       </p>
-      <p className="itemFromStatistics__text color-yellow">{text}</p>
+      <p className="itemFromCredit__text color-yellow">{text}</p>
     </div>
   );
 };
