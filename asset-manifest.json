@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/pegasus/static/css/main.e1d90aae.css",
-    "main.js": "/pegasus/static/js/main.14b0169b.js",
+    "main.css": "/pegasus/static/css/main.f2dc0f1d.css",
+    "main.js": "/pegasus/static/js/main.943e06a6.js",
+    "static/media/creditUnionIsrael.png": "/pegasus/static/media/creditUnionIsrael.49c955f0d0fcdfacef2a.png",
     "static/media/departmentsPhoto3.png": "/pegasus/static/media/departmentsPhoto3.ec91c673f4c078ba4196.png",
     "static/media/basic1.png": "/pegasus/static/media/basic1.f15d8ae64dfef998dc13.png",
     "static/media/basic2.png": "/pegasus/static/media/basic2.c92fd7ba305645ea6853.png",
@@ -16,9 +17,17 @@
     "static/media/articlesPhoto1.png": "/pegasus/static/media/articlesPhoto1.b2d36b462ffa4070cdba.png",
     "static/media/wpFix.svg": "/pegasus/static/media/wpFix.eca67a8fb67b85a5b089.svg",
     "static/media/homeBlock3.jpg": "/pegasus/static/media/homeBlock3.b756ad8b0872d4cb43db.jpg",
+    "static/media/stagesOfWork__img--1.png": "/pegasus/static/media/stagesOfWork__img--1.cd80a1de62c3465d1f5f.png",
     "static/media/departmentsPhoto4.jpg": "/pegasus/static/media/departmentsPhoto4.c23bccdd7da3edd5cfd8.jpg",
+    "static/media/thumbs-up.png": "/pegasus/static/media/thumbs-up.552124d5f4f689035539.png",
     "static/media/departmentsPhoto1.jpg": "/pegasus/static/media/departmentsPhoto1.dc18262e342489ded2bf.jpg",
+    "static/media/solution__img--2.png": "/pegasus/static/media/solution__img--2.16b0571893581101d846.png",
     "static/media/wp.png": "/pegasus/static/media/wp.c826b0165560636baf0b.png",
+    "static/media/stagesOfWork__img--2.png": "/pegasus/static/media/stagesOfWork__img--2.21f002c6796626b21d81.png",
+    "static/media/solution__img--1.png": "/pegasus/static/media/solution__img--1.0439e836c879341d7f7a.png",
+    "static/media/solution__img--3.png": "/pegasus/static/media/solution__img--3.54bb99230dbbe93b08d3.png",
+    "static/media/stagesOfWork__img--4.png": "/pegasus/static/media/stagesOfWork__img--4.f438694f0b5474384d4b.png",
+    "static/media/stagesOfWork__img--3.png": "/pegasus/static/media/stagesOfWork__img--3.b236b60e743bc85d9208.png",
     "static/media/favicon.svg": "/pegasus/static/media/favicon.6fc92ccde37656c61c38.svg",
     "static/media/logo.svg": "/pegasus/static/media/logo.6fc92ccde37656c61c38.svg",
     "static/media/phoneFix.svg": "/pegasus/static/media/phoneFix.c85ec0f8e745191d3832.svg",
@@ -28,11 +37,11 @@
     "static/media/itemArrow.svg": "/pegasus/static/media/itemArrow.88c6fedebd9568420a01.svg",
     "index.html": "/pegasus/index.html",
     "static/media/menu.svg": "/pegasus/static/media/menu.60d8c87f0b9dfa4212cf.svg",
-    "main.e1d90aae.css.map": "/pegasus/static/css/main.e1d90aae.css.map",
-    "main.14b0169b.js.map": "/pegasus/static/js/main.14b0169b.js.map"
+    "main.f2dc0f1d.css.map": "/pegasus/static/css/main.f2dc0f1d.css.map",
+    "main.943e06a6.js.map": "/pegasus/static/js/main.943e06a6.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1d90aae.css",
-    "static/js/main.14b0169b.js"
+    "static/css/main.f2dc0f1d.css",
+    "static/js/main.943e06a6.js"
   ]
 }
