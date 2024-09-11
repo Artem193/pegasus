@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/pegasus/static/css/main.f2dc0f1d.css",
-    "main.js": "/pegasus/static/js/main.943e06a6.js",
+    "main.css": "/pegasus/static/css/main.c74a7e24.css",
+    "main.js": "/pegasus/static/js/main.c0a57a3d.js",
+    "static/media/mortgageWithPegasus.png": "/pegasus/static/media/mortgageWithPegasus.e3c463847c5e4d4c26b7.png",
     "static/media/creditUnionIsrael.png": "/pegasus/static/media/creditUnionIsrael.49c955f0d0fcdfacef2a.png",
     "static/media/departmentsPhoto3.png": "/pegasus/static/media/departmentsPhoto3.ec91c673f4c078ba4196.png",
     "static/media/basic1.png": "/pegasus/static/media/basic1.f15d8ae64dfef998dc13.png",
@@ -15,14 +16,23 @@
     "static/media/articlesPhoto4.png": "/pegasus/static/media/articlesPhoto4.ce3d46ffa7430489688e.png",
     "static/media/articlesPhoto3.png": "/pegasus/static/media/articlesPhoto3.9b292c284ed10b31684e.png",
     "static/media/articlesPhoto1.png": "/pegasus/static/media/articlesPhoto1.b2d36b462ffa4070cdba.png",
+    "static/media/processDetails__img--2.png": "/pegasus/static/media/processDetails__img--2.37de4e91917835eed866.png",
+    "static/media/advantagesMortgage__img--4.png": "/pegasus/static/media/advantagesMortgage__img--4.0a1027154b997f4b625f.png",
     "static/media/wpFix.svg": "/pegasus/static/media/wpFix.eca67a8fb67b85a5b089.svg",
     "static/media/homeBlock3.jpg": "/pegasus/static/media/homeBlock3.b756ad8b0872d4cb43db.jpg",
+    "static/media/advantagesMortgage__img--1.png": "/pegasus/static/media/advantagesMortgage__img--1.c9d1d7b6fdcf69cd9373.png",
+    "static/media/processDetails__img--5.png": "/pegasus/static/media/processDetails__img--5.e1e219116cdfb18e1b39.png",
     "static/media/stagesOfWork__img--1.png": "/pegasus/static/media/stagesOfWork__img--1.cd80a1de62c3465d1f5f.png",
+    "static/media/advantagesMortgage__img--3.png": "/pegasus/static/media/advantagesMortgage__img--3.0df2aa066160ab97d416.png",
     "static/media/departmentsPhoto4.jpg": "/pegasus/static/media/departmentsPhoto4.c23bccdd7da3edd5cfd8.jpg",
     "static/media/thumbs-up.png": "/pegasus/static/media/thumbs-up.552124d5f4f689035539.png",
     "static/media/departmentsPhoto1.jpg": "/pegasus/static/media/departmentsPhoto1.dc18262e342489ded2bf.jpg",
+    "static/media/processDetails__img--1.png": "/pegasus/static/media/processDetails__img--1.3403d1c001a4a22a8624.png",
+    "static/media/advantagesMortgage__img--2.png": "/pegasus/static/media/advantagesMortgage__img--2.2ae6b11c209e01e725b0.png",
     "static/media/solution__img--2.png": "/pegasus/static/media/solution__img--2.16b0571893581101d846.png",
+    "static/media/processDetails__img--3.png": "/pegasus/static/media/processDetails__img--3.5ffabc1c4806673e9168.png",
     "static/media/wp.png": "/pegasus/static/media/wp.c826b0165560636baf0b.png",
+    "static/media/processDetails__img--4.png": "/pegasus/static/media/processDetails__img--4.585b785ea7b354fd3ba7.png",
     "static/media/stagesOfWork__img--2.png": "/pegasus/static/media/stagesOfWork__img--2.21f002c6796626b21d81.png",
     "static/media/solution__img--1.png": "/pegasus/static/media/solution__img--1.0439e836c879341d7f7a.png",
     "static/media/solution__img--3.png": "/pegasus/static/media/solution__img--3.54bb99230dbbe93b08d3.png",
@@ -37,11 +47,11 @@
     "static/media/itemArrow.svg": "/pegasus/static/media/itemArrow.88c6fedebd9568420a01.svg",
     "index.html": "/pegasus/index.html",
     "static/media/menu.svg": "/pegasus/static/media/menu.60d8c87f0b9dfa4212cf.svg",
-    "main.f2dc0f1d.css.map": "/pegasus/static/css/main.f2dc0f1d.css.map",
-    "main.943e06a6.js.map": "/pegasus/static/js/main.943e06a6.js.map"
+    "main.c74a7e24.css.map": "/pegasus/static/css/main.c74a7e24.css.map",
+    "main.c0a57a3d.js.map": "/pegasus/static/js/main.c0a57a3d.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2dc0f1d.css",
-    "static/js/main.943e06a6.js"
+    "static/css/main.c74a7e24.css",
+    "static/js/main.c0a57a3d.js"
   ]
 }
