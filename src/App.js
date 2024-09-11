@@ -5,6 +5,7 @@ import { StartTopPage } from './components/startTopPage/StartTopPage';
 import { Home } from './components/pages/home/Home';
 import { AboutUs } from './components/pages/aboutUs/AboutUs';
 import { CreditUnion } from './components/pages/creditUnion/CreditUnion';
+import { ReverseMortgage } from './components/pages/reverseMortgage/ReverseMortgage';
 
 const basename = '/pegasus';
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/creditUnion" element={<CreditUnion />} />
+        <Route path="/reverseMortgage" element={<ReverseMortgage />} />
       </Routes>
     </Router>
   );

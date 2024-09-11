@@ -1,0 +1,98 @@
+.advantagesMortgage {
+  margin-bottom: 80px;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 100px;
+  }
+
+  &__title {
+    margin: 0 0 60px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: #274A3F;
+
+    @media (min-width: 1024px) {
+      font-size: 48px;
+      margin: 0 0 120px;
+    }
+  }
+
+  &__advantages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+    }
+  }
+
+  &__advantage {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 20px;
+
+    @media (min-width: 1024px) {
+      height: 380px;
+    }
+  }
+
+  &__img {
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+
+    &--1 {
+      background-image: url(../../../../../images/advantagesMortgage__img--1.png);
+    }
+
+    &--2 {
+      background-image: url(../../../../../images/advantagesMortgage__img--2.png);
+    }
+
+    &--3 {
+      background-image: url(../../../../../images/advantagesMortgage__img--3.png);
+    }
+
+    &--4 {
+      background-image: url(../../../../../images/advantagesMortgage__img--4.png);
+    }
+  }
+
+  
+  &__subtitle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #274A3F;
+    text-align: center;
+
+    @media (min-width: 1024px) {
+      font-size: 22px;
+    }
+  }
+
+  &__text {
+    margin: 0 0 30px;
+    font-size: 16px;
+    color: #274A3F;
+    font-weight: 400;
+    text-indent: 20px;
+    text-align: center;
+
+    @media (min-width: 1024px) {
+      font-size: 20px;
+    }
+  }
+}

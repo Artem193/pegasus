@@ -1,0 +1,35 @@
+.mortgageQA {
+  margin-bottom: 80px;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 100px;
+  }
+
+  &__title {
+    margin: 0 0 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: #274A3F;
+
+    @media (min-width: 1024px) {
+      font-size: 48px;
+      margin: 0 0 45px;
+    }
+  }
+
+  &__questions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      gap: 70px;
+    }
+  }
+
+  &__half {
+    flex: 1;
+  }
+}

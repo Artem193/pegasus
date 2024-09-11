@@ -30,7 +30,7 @@ export const Header = () => {
           </div>
           <Link to="/" className="header__logo"></Link>
           <div className="header__items header__items--part2">
-            <MenuItem page={'Page4'} />
+            <MenuItem page={'Обратная ипотека'} link={'/reverseMortgage'}/>
             <MenuItem page={'Page5'} />
             <MenuItem page={'Page6'} />
             <MenuItem page={'Page7'} />
@@ -45,7 +45,7 @@ export const Header = () => {
         <MenuItemPhone page={'Главная'} link={'/'}/>
         <MenuItemPhone page={'О нас'} link={'/aboutUs'}/>
         <MenuItemPhone page={'Объединение кредитов'} link={'/creditUnion'}/>
-        <MenuItemPhone page={'page4'}/>
+        <MenuItemPhone page={'Обратная ипотека'} link={'/reverseMortgage'}/>
         <MenuItemPhone page={'page5'}/>
         <MenuItemPhone page={'page6'}/>
         <MenuItemPhone page={'page7'}/>

@@ -1,0 +1,74 @@
+.reverseMashkanta {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 100px;
+    flex-direction: row;
+  }
+
+  &__textContent {
+    flex: 1;
+    width: 100%;
+  }
+
+  &__title {
+    margin: 0 0 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: #274A3F;
+
+    @media (min-width: 1024px) {
+      font-size: 48px;
+      margin: 0 0 45px;
+    }
+
+    &--anime {
+      animation: blink 1s infinite;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #274A3F;
+
+    @media (min-width: 1024px) {
+      padding-bottom: 30px;
+      font-size: 22px;
+    }
+  }
+
+  &__item {
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: #274A3F;
+    font-weight: 400;
+
+    @media (min-width: 1024px) {
+      font-size: 20px;
+    }
+  }
+
+  &__form {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1; /* Текст видимий */
+  }
+  50% {
+    opacity: 0; /* Текст невидимий */
+  }
+}

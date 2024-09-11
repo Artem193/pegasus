@@ -1,0 +1,36 @@
+.explanationQA {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+
+  &__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #274A3F;
+    cursor: pointer;
+  }
+
+  &__icon {
+    transition: transform 0.5s ease;
+  }
+
+  &__icon.open {
+    transform: rotate(180deg);
+  }
+
+  &__text {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #274A3F;
+    font-weight: 400;
+
+    @media (min-width: 1024px) {
+      font-size: 20px;
+    }
+  }
+}

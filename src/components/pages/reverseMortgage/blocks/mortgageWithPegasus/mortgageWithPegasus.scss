@@ -1,0 +1,49 @@
+.mortgageWithPegasus {
+  position: relative;
+  background-image: url(../../../../../images/mortgageWithPegasus.png);
+  height: 900px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 -10px 100px;
+  padding-top: 50px;
+
+  @media (min-width: 1024px) {
+    margin: 0 -18px 100px;
+  }
+
+  &__textContent {
+    padding: 40px;
+    background-color: #FFFFEC;
+    border-radius: 10px;
+    
+    @media (min-width: 1024px) {
+      width: 600px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 20px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #274A3F;
+
+    @media (min-width: 1024px) {
+      font-size: 36px;
+      margin: 0 0 40px;
+    }
+  }
+
+  &__text {
+    margin: 0 0 30px;
+    font-size: 16px;
+    color: #274A3F;
+    font-weight: 400;
+    text-indent: 20px;
+
+
+    @media (min-width: 1024px) {
+      font-size: 20px;
+    }
+  }
+}
