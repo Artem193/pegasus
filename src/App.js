@@ -6,6 +6,7 @@ import { Home } from './components/pages/home/Home';
 import { AboutUs } from './components/pages/aboutUs/AboutUs';
 import { CreditUnion } from './components/pages/creditUnion/CreditUnion';
 import { ReverseMortgage } from './components/pages/reverseMortgage/ReverseMortgage';
+import { TableReverseMortgage } from './components/pages/tableReverseMortgage/TableReverseMortgage';
 
 const basename = '/pegasus';
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/creditUnion" element={<CreditUnion />} />
         <Route path="/reverseMortgage" element={<ReverseMortgage />} />
+        <Route path='/tableReverseMortgage' element={<TableReverseMortgage />} />
       </Routes>
     </Router>
   );

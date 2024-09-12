@@ -18,19 +18,53 @@ export const Header = () => {
     setIsFormOpen(!isFormOpen);
   };
 
+  const [isListOpen, setIsListOpen] = useState(false);
+
+  const toggleList = () => {
+    setIsListOpen(!isListOpen);
+  }
+
   return (
     <>
       <header className="header">
         <nav className="header__nav">
           <button className="header__menu" onClick={toggleMenu}></button>
           <div className="header__items header__items--part1">
-            <MenuItem page={'Главная'} link={'/'}/>
-            <MenuItem page={'О нас'} link={'/aboutUs'}/>
-            <MenuItem page={'Объединение кредитов'} link={'/creditUnion'}/>
+            <MenuItem page={'Главная'} link={'/'} />
+            <MenuItem page={'О нас'} link={'/aboutUs'} />
+            <MenuItem page={'Объединение кредитов'} link={'/creditUnion'}
+            />
           </div>
           <Link to="/" className="header__logo"></Link>
           <div className="header__items header__items--part2">
-            <MenuItem page={'Обратная ипотека'} link={'/reverseMortgage'}/>
+            <div className="header__explanation">
+              <div className="header__explanation--active" onClick={toggleList}>
+                <MenuItem
+                  page={'Обратная ипотека'}
+                />
+                <span className={`header__explanation--icon ${isListOpen ? 'open' : ''}`}>
+                  ▼
+                </span>
+              </div>
+              {isListOpen && (
+                <div className="header__explanation--dropdown">
+                  <ul className="header__explanation--list">
+                    <li className="header__explanation--item">
+                      <MenuItem page={'Обратная ипотека'} link={'/reverseMortgage'} />
+                    </li>
+                    <li className="header__explanation--item">
+                      <MenuItem page={'Таблица обратной ипотеки'} link={'/tableReverseMortgage'} />
+                    </li>
+                    <li className="header__explanation--item">
+                      <MenuItem page={'Page'} />
+                    </li>
+                    <li className="header__explanation--item">
+                      <MenuItem page={'Page'} />
+                    </li>
+                  </ul>
+                </div>
+              )}
+            </div>
             <MenuItem page={'Page5'} />
             <MenuItem page={'Page6'} />
             <MenuItem page={'Page7'} />
@@ -42,13 +76,40 @@ export const Header = () => {
         </nav>
       </header>
       <ul className={`menuList ${isMenuOpen ? 'menuList--active' : 'menuList--hidden'}`} id="menuList">
-        <MenuItemPhone page={'Главная'} link={'/'}/>
-        <MenuItemPhone page={'О нас'} link={'/aboutUs'}/>
-        <MenuItemPhone page={'Объединение кредитов'} link={'/creditUnion'}/>
-        <MenuItemPhone page={'Обратная ипотека'} link={'/reverseMortgage'}/>
-        <MenuItemPhone page={'page5'}/>
-        <MenuItemPhone page={'page6'}/>
-        <MenuItemPhone page={'page7'}/>
+        <MenuItemPhone page={'Главная'} link={'/'} />
+        <MenuItemPhone page={'О нас'} link={'/aboutUs'} />
+        <MenuItemPhone page={'Объединение кредитов'} link={'/creditUnion'} />
+        <div className={`header__explanation ${isListOpen ? 'header__explanation--open' : ''}`}>
+          <div className="header__explanation--active" onClick={toggleList}>
+            <MenuItemPhone
+              page={'Обратная ипотека'}
+            />
+            <span className={`header__explanation--icon ${isListOpen ? 'open' : ''}`}>
+              ▼
+            </span>
+          </div>
+          {isListOpen && (
+            <div className="header__explanation--dropdown">
+              <ul className="header__explanation--list">
+                <li className="header__explanation--item">
+                  <MenuItemPhone page={'Обратная ипотека'} link={'/reverseMortgage'} />
+                </li>
+                <li className="header__explanation--item">
+                  <MenuItemPhone page={'Таблица обратной ипотеки'} link={'/tableReverseMortgage'} />
+                </li>
+                <li className="header__explanation--item">
+                  <MenuItemPhone page={'Page'} />
+                </li>
+                <li className="header__explanation--item">
+                  <MenuItemPhone page={'Page'} />
+                </li>
+              </ul>
+            </div>
+          )}
+        </div>
+        <MenuItemPhone page={'page5'} />
+        <MenuItemPhone page={'page6'} />
+        <MenuItemPhone page={'page7'} />
         <div className="cross cross--menu" onClick={toggleMenu}></div>
       </ul>
       <a href="tel:+1 234 555-55-55" className="button button--phone">
