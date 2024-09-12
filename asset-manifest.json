@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pegasus/static/css/main.c74a7e24.css",
-    "main.js": "/pegasus/static/js/main.c0a57a3d.js",
+    "main.css": "/pegasus/static/css/main.f2961100.css",
+    "main.js": "/pegasus/static/js/main.4b6205bc.js",
     "static/media/mortgageWithPegasus.png": "/pegasus/static/media/mortgageWithPegasus.e3c463847c5e4d4c26b7.png",
     "static/media/creditUnionIsrael.png": "/pegasus/static/media/creditUnionIsrael.49c955f0d0fcdfacef2a.png",
     "static/media/departmentsPhoto3.png": "/pegasus/static/media/departmentsPhoto3.ec91c673f4c078ba4196.png",
@@ -21,6 +21,7 @@
     "static/media/wpFix.svg": "/pegasus/static/media/wpFix.eca67a8fb67b85a5b089.svg",
     "static/media/homeBlock3.jpg": "/pegasus/static/media/homeBlock3.b756ad8b0872d4cb43db.jpg",
     "static/media/advantagesMortgage__img--1.png": "/pegasus/static/media/advantagesMortgage__img--1.c9d1d7b6fdcf69cd9373.png",
+    "static/media/tableReverseMortgage__photo.jpg": "/pegasus/static/media/tableReverseMortgage__photo.eb70f5862d90fe191ee5.jpg",
     "static/media/processDetails__img--5.png": "/pegasus/static/media/processDetails__img--5.e1e219116cdfb18e1b39.png",
     "static/media/stagesOfWork__img--1.png": "/pegasus/static/media/stagesOfWork__img--1.cd80a1de62c3465d1f5f.png",
     "static/media/advantagesMortgage__img--3.png": "/pegasus/static/media/advantagesMortgage__img--3.0df2aa066160ab97d416.png",
@@ -47,11 +48,11 @@
     "static/media/itemArrow.svg": "/pegasus/static/media/itemArrow.88c6fedebd9568420a01.svg",
     "index.html": "/pegasus/index.html",
     "static/media/menu.svg": "/pegasus/static/media/menu.60d8c87f0b9dfa4212cf.svg",
-    "main.c74a7e24.css.map": "/pegasus/static/css/main.c74a7e24.css.map",
-    "main.c0a57a3d.js.map": "/pegasus/static/js/main.c0a57a3d.js.map"
+    "main.f2961100.css.map": "/pegasus/static/css/main.f2961100.css.map",
+    "main.4b6205bc.js.map": "/pegasus/static/js/main.4b6205bc.js.map"
   },
   "entrypoints": [
-    "static/css/main.c74a7e24.css",
-    "static/js/main.c0a57a3d.js"
+    "static/css/main.f2961100.css",
+    "static/js/main.4b6205bc.js"
   ]
 }
