@@ -7,6 +7,8 @@ import { AboutUs } from './components/pages/aboutUs/AboutUs';
 import { CreditUnion } from './components/pages/creditUnion/CreditUnion';
 import { ReverseMortgage } from './components/pages/reverseMortgage/ReverseMortgage';
 import { TableReverseMortgage } from './components/pages/tableReverseMortgage/TableReverseMortgage';
+import { CalculateReverseMortgage } from './components/pages/calculateReverseMortgage/CalculateReverseMortgage';
+import { MortgageComparison } from './components/pages/mortgageComparison/MortgageComparison';
 
 const basename = '/pegasus';
 
@@ -20,6 +22,8 @@ function App() {
         <Route path="/creditUnion" element={<CreditUnion />} />
         <Route path="/reverseMortgage" element={<ReverseMortgage />} />
         <Route path='/tableReverseMortgage' element={<TableReverseMortgage />} />
+        <Route path='/calculateReverseMortgage' element={<CalculateReverseMortgage />} />
+        <Route path='/mortgageComparison' element={<MortgageComparison />} />
       </Routes>
     </Router>
   );

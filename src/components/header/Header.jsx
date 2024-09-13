@@ -56,10 +56,10 @@ export const Header = () => {
                       <MenuItem page={'Таблица обратной ипотеки'} link={'/tableReverseMortgage'} />
                     </li>
                     <li className="header__explanation--item">
-                      <MenuItem page={'Page'} />
+                      <MenuItem page={'Калькулятор обратной ипотеки'} link={'/calculateReverseMortgage'} />
                     </li>
                     <li className="header__explanation--item">
-                      <MenuItem page={'Page'} />
+                      <MenuItem page={'Сравнение обратной ипотеки'} link={'/mortgageComparison'} />
                     </li>
                   </ul>
                 </div>
@@ -98,10 +98,10 @@ export const Header = () => {
                   <MenuItemPhone page={'Таблица обратной ипотеки'} link={'/tableReverseMortgage'} />
                 </li>
                 <li className="header__explanation--item">
-                  <MenuItemPhone page={'Page'} />
+                  <MenuItemPhone page={'Калькулятор обратной ипотеки'} link={'/calculateReverseMortgage'} />
                 </li>
                 <li className="header__explanation--item">
-                  <MenuItemPhone page={'Page'} />
+                  <MenuItemPhone page={'Сравнение обратной ипотеки'} link={'/mortgageComparison'} />
                 </li>
               </ul>
             </div>
