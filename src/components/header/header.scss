@@ -253,6 +253,7 @@
       background-color: #274A3F;
       color: #FFFFEC;
     }
+  
   }
 
   &--phone {
@@ -347,6 +348,11 @@
       margin: 7px 40px;
       font-size: 20px;
       padding-left: 15px;
+    }
+
+    &:focus {
+      box-shadow: 0 0 5px 2px #274A3F;
+      outline: none;
     }
 
 

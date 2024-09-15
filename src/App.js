@@ -9,6 +9,7 @@ import { ReverseMortgage } from './components/pages/reverseMortgage/ReverseMortg
 import { TableReverseMortgage } from './components/pages/tableReverseMortgage/TableReverseMortgage';
 import { CalculateReverseMortgage } from './components/pages/calculateReverseMortgage/CalculateReverseMortgage';
 import { MortgageComparison } from './components/pages/mortgageComparison/MortgageComparison';
+import { BankRefusal } from './components/pages/bankRefusal/BankRefusal';
 
 const basename = '/pegasus';
 
@@ -24,6 +25,7 @@ function App() {
         <Route path='/tableReverseMortgage' element={<TableReverseMortgage />} />
         <Route path='/calculateReverseMortgage' element={<CalculateReverseMortgage />} />
         <Route path='/mortgageComparison' element={<MortgageComparison />} />
+        <Route path='/bankRefusal' element={<BankRefusal />} />
       </Routes>
     </Router>
   );

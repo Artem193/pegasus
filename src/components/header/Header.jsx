@@ -24,6 +24,12 @@ export const Header = () => {
     setIsListOpen(!isListOpen);
   }
 
+  const [isListOpen2, setIsListOpen2] = useState(false);
+
+  const toggleList2 = () => {
+    setIsListOpen2(!isListOpen2);
+  }
+
   return (
     <>
       <header className="header">
@@ -65,7 +71,40 @@ export const Header = () => {
                 </div>
               )}
             </div>
-            <MenuItem page={'Page5'} />
+            <div className="header__explanation">
+              <div className="header__explanation--active" onClick={toggleList2}>
+                <MenuItem
+                  page={'Наши услуги'}
+                />
+                <span className={`header__explanation--icon ${isListOpen2 ? 'open' : ''}`}>
+                  ▼
+                </span>
+              </div>
+              {isListOpen2 && (
+                <div className="header__explanation--dropdown">
+                  <ul className="header__explanation--list">
+                    <li className="header__explanation--item">
+                      <MenuItem page={'Как получить ипотеку, если банк отказал'} link={'/bankRefusal'} />
+                    </li>
+                    <li className="header__explanation--item">
+                      <MenuItem page={'Таблица обратной ипотеки'} link={'/tableReverseMortgage'} />
+                    </li>
+                    <li className="header__explanation--item">
+                      <MenuItem page={'Калькулятор обратной ипотеки'} link={'/calculateReverseMortgage'} />
+                    </li>
+                    <li className="header__explanation--item">
+                      <MenuItem page={'Сравнение обратной ипотеки'} link={'/mortgageComparison'} />
+                    </li>
+                    <li className="header__explanation--item">
+                      <MenuItem page={'Сравнение обратной ипотеки'} link={'/mortgageComparison'} />
+                    </li>
+                    <li className="header__explanation--item">
+                      <MenuItem page={'Сравнение обратной ипотеки'} link={'/mortgageComparison'} />
+                    </li>
+                  </ul>
+                </div>
+              )}
+            </div>
             <MenuItem page={'Page6'} />
             <MenuItem page={'Page7'} />
           </div>
@@ -107,7 +146,40 @@ export const Header = () => {
             </div>
           )}
         </div>
-        <MenuItemPhone page={'page5'} />
+        <div className={`header__explanation ${isListOpen2 ? 'header__explanation--open' : ''}`}>
+          <div className="header__explanation--active" onClick={toggleList2}>
+            <MenuItemPhone
+              page={'Наши услуги'}
+            />
+            <span className={`header__explanation--icon ${isListOpen2 ? 'open' : ''}`}>
+              ▼
+            </span>
+          </div>
+          {isListOpen2 && (
+            <div className="header__explanation--dropdown">
+              <ul className="header__explanation--list">
+                <li className="header__explanation--item">
+                  <MenuItemPhone page={'Как получить ипотеку, если банк отказал'} link={'/bankRefusal'} />
+                </li>
+                <li className="header__explanation--item">
+                  <MenuItemPhone page={'Таблица обратной ипотеки'} link={'/tableReverseMortgage'} />
+                </li>
+                <li className="header__explanation--item">
+                  <MenuItemPhone page={'Калькулятор обратной ипотеки'} link={'/calculateReverseMortgage'} />
+                </li>
+                <li className="header__explanation--item">
+                  <MenuItemPhone page={'Сравнение обратной ипотеки'} link={'/mortgageComparison'} />
+                </li>
+                <li className="header__explanation--item">
+                  <MenuItemPhone page={'Сравнение обратной ипотеки'} link={'/mortgageComparison'} />
+                </li>
+                <li className="header__explanation--item">
+                  <MenuItemPhone page={'Сравнение обратной ипотеки'} link={'/mortgageComparison'} />
+                </li>
+              </ul>
+            </div>
+          )}
+        </div>
         <MenuItemPhone page={'page6'} />
         <MenuItemPhone page={'page7'} />
         <div className="cross cross--menu" onClick={toggleMenu}></div>
