@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/pegasus/static/css/main.e17ac021.css",
-    "main.js": "/pegasus/static/js/main.97868eeb.js",
+    "main.css": "/pegasus/static/css/main.4aa1f91e.css",
+    "main.js": "/pegasus/static/js/main.73ec0026.js",
     "static/media/mortgageWithPegasus.png": "/pegasus/static/media/mortgageWithPegasus.e3c463847c5e4d4c26b7.png",
     "static/media/creditUnionIsrael.png": "/pegasus/static/media/creditUnionIsrael.49c955f0d0fcdfacef2a.png",
     "static/media/mortgageComparison__img.png": "/pegasus/static/media/mortgageComparison__img.d9e419572398b26a75bb.png",
+    "static/media/contentImg.png": "/pegasus/static/media/contentImg.e67b3931fd79d75f6952.png",
     "static/media/departmentsPhoto3.png": "/pegasus/static/media/departmentsPhoto3.ec91c673f4c078ba4196.png",
     "static/media/basic1.png": "/pegasus/static/media/basic1.f15d8ae64dfef998dc13.png",
     "static/media/basic2.png": "/pegasus/static/media/basic2.c92fd7ba305645ea6853.png",
@@ -30,6 +31,7 @@
     "static/media/thumbs-up.png": "/pegasus/static/media/thumbs-up.552124d5f4f689035539.png",
     "static/media/departmentsPhoto1.jpg": "/pegasus/static/media/departmentsPhoto1.dc18262e342489ded2bf.jpg",
     "static/media/processDetails__img--1.png": "/pegasus/static/media/processDetails__img--1.3403d1c001a4a22a8624.png",
+    "static/media/contentImg2.jpg": "/pegasus/static/media/contentImg2.a79390d61f018c34a58f.jpg",
     "static/media/advantagesMortgage__img--2.png": "/pegasus/static/media/advantagesMortgage__img--2.2ae6b11c209e01e725b0.png",
     "static/media/solution__img--2.png": "/pegasus/static/media/solution__img--2.16b0571893581101d846.png",
     "static/media/processDetails__img--3.png": "/pegasus/static/media/processDetails__img--3.5ffabc1c4806673e9168.png",
@@ -49,11 +51,11 @@
     "static/media/itemArrow.svg": "/pegasus/static/media/itemArrow.88c6fedebd9568420a01.svg",
     "index.html": "/pegasus/index.html",
     "static/media/menu.svg": "/pegasus/static/media/menu.60d8c87f0b9dfa4212cf.svg",
-    "main.e17ac021.css.map": "/pegasus/static/css/main.e17ac021.css.map",
-    "main.97868eeb.js.map": "/pegasus/static/js/main.97868eeb.js.map"
+    "main.4aa1f91e.css.map": "/pegasus/static/css/main.4aa1f91e.css.map",
+    "main.73ec0026.js.map": "/pegasus/static/js/main.73ec0026.js.map"
   },
   "entrypoints": [
-    "static/css/main.e17ac021.css",
-    "static/js/main.97868eeb.js"
+    "static/css/main.4aa1f91e.css",
+    "static/js/main.73ec0026.js"
   ]
 }
