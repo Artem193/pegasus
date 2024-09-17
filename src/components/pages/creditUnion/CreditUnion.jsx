@@ -21,10 +21,17 @@ export const CreditUnion = () => {
       <CreditUnionIsrael />
       <div className="page creditUnion">
         <div className="page__container">
-          <StagesOfWork />
+          <StagesOfWork title='Мы поможем объединить ваши кредиты и снизить выплаты' />
         </div>
         <div className="page__container">
-          <Solution />
+          <Solution
+            subtitle='Два и более кредита'
+            subtitle1='Наличие недвижимости'
+            subtitle2='Консолидация кредитов'
+            text='на сумму свыше 120,000 шекелей'
+            text1='Недвижимость имеется у вас или ваших родителей'
+            text2='Объединение займов на более длительный срок с пониженной процентной ставкой для уменьшения ежемесячных платежей'
+          />
         </div>
         <Form1 />
         <div className="page__container">

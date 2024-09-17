@@ -87,19 +87,19 @@ export const Header = () => {
                       <MenuItem page={'Как получить ипотеку, если банк отказал'} link={'/bankRefusal'} />
                     </li>
                     <li className="header__explanation--item">
-                      <MenuItem page={'Таблица обратной ипотеки'} link={'/tableReverseMortgage'} />
+                      <MenuItem page={'page'} link={'/calculateReverseMortgage'} />
                     </li>
                     <li className="header__explanation--item">
-                      <MenuItem page={'Калькулятор обратной ипотеки'} link={'/calculateReverseMortgage'} />
+                      <MenuItem page={'Машканта после отказа'} link={'/mortgageForRefuseniks'} />
                     </li>
                     <li className="header__explanation--item">
-                      <MenuItem page={'Сравнение обратной ипотеки'} link={'/mortgageComparison'} />
+                      <MenuItem page={'Объединение кредитов'} link={'/creditUnion'} />
                     </li>
                     <li className="header__explanation--item">
-                      <MenuItem page={'Сравнение обратной ипотеки'} link={'/mortgageComparison'} />
+                      <MenuItem page={'Ипотека для тех, кто получил отказ в Израиле'} link={'/refuseniksInIsrael'} />
                     </li>
                     <li className="header__explanation--item">
-                      <MenuItem page={'Сравнение обратной ипотеки'} link={'/mortgageComparison'} />
+                      <MenuItem page={'page'} link={'/mortgageComparison'} />
                     </li>
                   </ul>
                 </div>
@@ -162,19 +162,19 @@ export const Header = () => {
                   <MenuItemPhone page={'Как получить ипотеку, если банк отказал'} link={'/bankRefusal'} />
                 </li>
                 <li className="header__explanation--item">
-                  <MenuItemPhone page={'Таблица обратной ипотеки'} link={'/tableReverseMortgage'} />
+                  <MenuItemPhone page={'page'} link={'/calculateReverseMortgage'} />
                 </li>
                 <li className="header__explanation--item">
-                  <MenuItemPhone page={'Калькулятор обратной ипотеки'} link={'/calculateReverseMortgage'} />
+                  <MenuItemPhone page={'Машканта после отказа'} link={'/mortgageForRefuseniks'} />
                 </li>
                 <li className="header__explanation--item">
-                  <MenuItemPhone page={'Сравнение обратной ипотеки'} link={'/mortgageComparison'} />
+                  <MenuItemPhone page={'Объединение кредитов'} link={'/creditUnion'} />
                 </li>
                 <li className="header__explanation--item">
-                  <MenuItemPhone page={'Сравнение обратной ипотеки'} link={'/mortgageComparison'} />
+                  <MenuItemPhone page={'Ипотека для тех, кто получил отказ в Израиле'} link={'/refuseniksInIsrael'} />
                 </li>
                 <li className="header__explanation--item">
-                  <MenuItemPhone page={'Сравнение обратной ипотеки'} link={'/mortgageComparison'} />
+                  <MenuItemPhone page={'page'} link={'/mortgageComparison'} />
                 </li>
               </ul>
             </div>

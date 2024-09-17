@@ -1,7 +1,16 @@
 import React from "react";
 import './solution.scss';
 
-export const Solution = () => {
+export const Solution = (
+  {
+    subtitle,
+    subtitle1,
+    subtitle2,
+    text,
+    text1,
+    text2,
+  }
+) => {
   return (
     <div className="solution">
       <h1 className="solution__title">
@@ -10,23 +19,23 @@ export const Solution = () => {
       <div className="solution__stages">
         <div className="solution__stage">
           <div className="solution__img solution__img--1"></div>
-          <h2 className="solution__subtitle">Два и более кредита</h2>
+          <h2 className="solution__subtitle">{subtitle}</h2>
           <p className="solution__text">
-            на сумму свыше 120,000 шекелей
+            {text}
           </p>
         </div>
         <div className="solution__stage">
           <div className="solution__img solution__img--2"></div>
-          <h2 className="solution__subtitle">Наличие недвижимости</h2>
+          <h2 className="solution__subtitle">{subtitle1}</h2>
           <p className="solution__text">
-            Недвижимость имеется у вас или ваших родителей
+            {text1}
           </p>
         </div>
         <div className="solution__stage">
           <div className="solution__img solution__img--3"></div>
-          <h2 className="solution__subtitle">Консолидация кредитов</h2>
+          <h2 className="solution__subtitle">{subtitle2}</h2>
           <p className="solution__text">
-            Объединение займов на более длительный срок с пониженной процентной ставкой для уменьшения ежемесячных платежей
+            {text2}
           </p>
         </div>
       </div>

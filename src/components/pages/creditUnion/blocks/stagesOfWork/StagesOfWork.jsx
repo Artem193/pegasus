@@ -1,11 +1,11 @@
 import React from "react";
 import './stagesOfWork.scss';
 
-export const StagesOfWork = () => {
+export const StagesOfWork = ({ title }) => {
   return (
     <div className="stagesOfWork">
       <h1 className="stagesOfWork__title">
-        Мы поможем объединить ваши кредиты и снизить выплаты
+        {title}
       </h1>
       <div className="stagesOfWork__stages">
         <div className="stagesOfWork__stage">

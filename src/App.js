@@ -10,6 +10,8 @@ import { TableReverseMortgage } from './components/pages/tableReverseMortgage/Ta
 import { CalculateReverseMortgage } from './components/pages/calculateReverseMortgage/CalculateReverseMortgage';
 import { MortgageComparison } from './components/pages/mortgageComparison/MortgageComparison';
 import { BankRefusal } from './components/pages/bankRefusal/BankRefusal';
+import { MortgageForRefuseniks } from './components/pages/mortgageForRefuseniks/MortgageForRefuseniks';
+import { RefuseniksInIsrael } from './components/pages/refuseniksInIsrael/RefuseniksInIsrael';
 
 const basename = '/pegasus';
 
@@ -26,6 +28,8 @@ function App() {
         <Route path='/calculateReverseMortgage' element={<CalculateReverseMortgage />} />
         <Route path='/mortgageComparison' element={<MortgageComparison />} />
         <Route path='/bankRefusal' element={<BankRefusal />} />
+        <Route path='/mortgageForRefuseniks' element={<MortgageForRefuseniks />} />
+        <Route path='/refuseniksInIsrael' element={<RefuseniksInIsrael />} />
       </Routes>
     </Router>
   );
