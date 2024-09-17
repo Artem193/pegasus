@@ -87,7 +87,7 @@ export const Header = () => {
                       <MenuItem page={'Как получить ипотеку, если банк отказал'} link={'/bankRefusal'} />
                     </li>
                     <li className="header__explanation--item">
-                      <MenuItem page={'page'} link={'/calculateReverseMortgage'} />
+                      <MenuItem page={'Калькулятор машканты'} link={'/calculateMortgage'} />
                     </li>
                     <li className="header__explanation--item">
                       <MenuItem page={'Машканта после отказа'} link={'/mortgageForRefuseniks'} />
@@ -162,7 +162,7 @@ export const Header = () => {
                   <MenuItemPhone page={'Как получить ипотеку, если банк отказал'} link={'/bankRefusal'} />
                 </li>
                 <li className="header__explanation--item">
-                  <MenuItemPhone page={'page'} link={'/calculateReverseMortgage'} />
+                  <MenuItemPhone page={'Калькулятор машканты'} link={'/calculateMortgage'} />
                 </li>
                 <li className="header__explanation--item">
                   <MenuItemPhone page={'Машканта после отказа'} link={'/mortgageForRefuseniks'} />

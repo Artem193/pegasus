@@ -12,6 +12,7 @@ import { MortgageComparison } from './components/pages/mortgageComparison/Mortga
 import { BankRefusal } from './components/pages/bankRefusal/BankRefusal';
 import { MortgageForRefuseniks } from './components/pages/mortgageForRefuseniks/MortgageForRefuseniks';
 import { RefuseniksInIsrael } from './components/pages/refuseniksInIsrael/RefuseniksInIsrael';
+import { CalculateMortgage } from './components/pages/calculateMortgage/CalculateMortgage';
 
 const basename = '/pegasus';
 
@@ -30,6 +31,7 @@ function App() {
         <Route path='/bankRefusal' element={<BankRefusal />} />
         <Route path='/mortgageForRefuseniks' element={<MortgageForRefuseniks />} />
         <Route path='/refuseniksInIsrael' element={<RefuseniksInIsrael />} />
+        <Route path='/calculateMortgage' element={<CalculateMortgage />} />
       </Routes>
     </Router>
   );

@@ -82,7 +82,7 @@ export const Services = () => {
           </div>
           <a href="#" className="services__link">
             <div className="services__button">
-              Пенстонная ипотека
+              Пенсионная ипотека
             </div>
           </a>
         </div>
