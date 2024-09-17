@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pegasus/static/css/main.03b2b134.css",
-    "main.js": "/pegasus/static/js/main.23236bb0.js",
+    "main.js": "/pegasus/static/js/main.927af437.js",
     "static/media/mortgageWithPegasus.png": "/pegasus/static/media/mortgageWithPegasus.e3c463847c5e4d4c26b7.png",
     "static/media/creditUnionIsrael.png": "/pegasus/static/media/creditUnionIsrael.49c955f0d0fcdfacef2a.png",
     "static/media/mortgageComparison__img.png": "/pegasus/static/media/mortgageComparison__img.d9e419572398b26a75bb.png",
@@ -56,10 +56,10 @@
     "index.html": "/pegasus/index.html",
     "static/media/menu.svg": "/pegasus/static/media/menu.60d8c87f0b9dfa4212cf.svg",
     "main.03b2b134.css.map": "/pegasus/static/css/main.03b2b134.css.map",
-    "main.23236bb0.js.map": "/pegasus/static/js/main.23236bb0.js.map"
+    "main.927af437.js.map": "/pegasus/static/js/main.927af437.js.map"
   },
   "entrypoints": [
     "static/css/main.03b2b134.css",
-    "static/js/main.23236bb0.js"
+    "static/js/main.927af437.js"
   ]
 }
