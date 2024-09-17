@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { useRef } from "react";
 import './calculate.scss';
 
 export const Calculate = () => {
@@ -14,6 +15,8 @@ export const Calculate = () => {
     monthlyPayment: 0,
     sumMortgage: 0
   });
+
+  const resultRef = useRef(null);
 
   const handleCalculate = (e) => {
     e.preventDefault();
@@ -37,6 +40,8 @@ export const Calculate = () => {
       monthlyPayment: monthlyPayment || 0,
       sumMortgage
     });
+
+    resultRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -124,13 +129,13 @@ export const Calculate = () => {
         <button
           onClick={handleCalculate}
           className="calculate__button"
-          disabled={!price || capital < price / 4 || capital > price || !duration}
+          disabled={!price || capital < price / 4 || capital > price || !duration || !income}
         >
           Рассчитать
         </button>
       </div>
 
-      <div className="calculate__results">
+      <div className="calculate__results" ref={resultRef}>
         <h1 className="calculate__title">Расчет финансовой способности</h1>
         <p className="calculate__subtitle">Максимальная сумма погашения машканты в зависимости от дохода: <span className="calculate__result">{results.maxPayment}</span></p>
         <p className="calculate__subtitle">Минимальный ежемесячный платеж: <span className="calculate__result">{results.monthlyPayment}</span></p>
