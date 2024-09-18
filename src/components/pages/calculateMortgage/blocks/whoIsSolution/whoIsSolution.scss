@@ -38,7 +38,6 @@
 
     @media (min-width: 1024px) {
       flex: 1;
-      height: 500px;
     }
   }
 
@@ -51,19 +50,23 @@
     margin: 0 auto;
 
     &--1 {
-      background-image: url(../../../../../images/stagesOfWork__img--1.png);
+      background-image: url(../../../../../images/whoIsSolution__img--1.png);
     }
 
     &--2 {
-      background-image: url(../../../../../images/stagesOfWork__img--2.png);
+      background-image: url(../../../../../images/whoIsSolution__img--2.png);
     }
 
     &--3 {
-      background-image: url(../../../../../images/stagesOfWork__img--3.png);
+      background-image: url(../../../../../images/whoIsSolution__img--3.png);
     }
 
     &--4 {
-      background-image: url(../../../../../images/processDetails__img--1.png);
+      background-image: url(../../../../../images/whoIsSolution__img--4.png);
+    }
+
+    &--5 {
+      background-image: url(../../../../../images/whoIsSolution__img--5.png);
     }
   }
 
