@@ -1,6 +1,4 @@
-import React from "react";
-import { useState } from "react";
-import { useRef } from "react";
+import React, { useRef, useState } from "react";
 import './calculate.scss';
 
 export const Calculate = () => {
@@ -9,7 +7,10 @@ export const Calculate = () => {
   const [duration, setDuration] = useState('');
   const [percent, setPercent] = useState(3);
   const [income, setIncome] = useState('');
-  const [error, setError] = useState('');
+  const [priceError, setPriceError] = useState('');
+  const [capitalError, setCapitalError] = useState('');
+  const [durationError, setDurationError] = useState('');
+  const [incomeError, setIncomeError] = useState('');
   const [results, setResults] = useState({
     maxPayment: 0,
     monthlyPayment: 0,
@@ -21,12 +22,39 @@ export const Calculate = () => {
   const handleCalculate = (e) => {
     e.preventDefault();
 
-    if (price && capital < price * 0.25) {
-      setError('Минимальный первоначальный взнос 25% от стоимость объекта недвижимости');
+    if (!price || price === 0) {
+      setPriceError('*Укажите стоимость');
       return;
+    } else {
+      setPriceError('');
     }
 
-    setError('');
+    if (!capital || capital === 0) {
+      setCapitalError('*Укажите первоначальный взнос')
+      return;
+    } else if (capital < price / 4) {
+      setCapitalError('*Минимальный первоначальный взнос 25% от стоимости');
+      return;
+    } else if (capital > price) {
+      setCapitalError('Первоначальный взнос не может превышать стоимость объекта недвижимости')
+      return;
+    } else {
+      setCapitalError('');
+    }
+
+    if (!duration || duration === 0) {
+      setDurationError('*Укажите длительность');
+      return;
+    } else {
+      setDurationError('');
+    }
+
+    if (!income || income === 0) {
+      setIncomeError('*Укажите доход');
+      return;
+    } else {
+      setIncomeError('');
+    }
 
     const maxPayment = income * 0.4;
     const sumMortgage = price - capital;
@@ -51,6 +79,7 @@ export const Calculate = () => {
         <label htmlFor="1" className="calculate__subtitle">
           Стоимость объекта недвижимости(₪):
         </label>
+        {priceError && <p className="calculate__error">{priceError}</p>}
         <input
           type="number"
           name="price"
@@ -64,10 +93,11 @@ export const Calculate = () => {
           required
           className="calculate__input"
         />
-        <label htmlFor="2" className="calculate__subtitle">Первоначальный взнос(₪): </label>
-        <p className="calculate__error">
-          Минимальный первоначальный взнос 25% от стоимость объекта недвижимости
-        </p>
+        <label htmlFor="2" className="calculate__subtitle">
+          Первоначальный взнос (min25% ₪): {price / 4}
+          <br />
+        </label>
+        {capitalError && <p className="calculate__error">{capitalError}</p>}
         <input
           type="number"
           name="capital"
@@ -81,8 +111,8 @@ export const Calculate = () => {
           required
           className="calculate__input"
         />
-        {error && <p className="calculate__error">{error}</p>}
         <label htmlFor="3" className="calculate__subtitle">Длительность(лет): </label>
+        {durationError && <p className="calculate__error">{durationError}</p>}
         <input
           type="number"
           name="duration"
@@ -112,6 +142,7 @@ export const Calculate = () => {
           className="calculate__inputSlider"
         />
         <label htmlFor="5" className="calculate__subtitle">Доход(₪): </label>
+        {incomeError && <p className="calculate__error">{incomeError}</p>}
         <input
           type="number"
           name="income"
@@ -129,7 +160,6 @@ export const Calculate = () => {
         <button
           onClick={handleCalculate}
           className="calculate__button"
-          disabled={!price || capital < price / 4 || capital > price || !duration || !income}
         >
           Рассчитать
         </button>
