@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pegasus/static/css/main.93589586.css",
-    "main.js": "/pegasus/static/js/main.1b6beb3c.js",
+    "main.css": "/pegasus/static/css/main.c8e5accc.css",
+    "main.js": "/pegasus/static/js/main.55d803f7.js",
     "static/media/mortgageWithPegasus.png": "/pegasus/static/media/mortgageWithPegasus.e3c463847c5e4d4c26b7.png",
     "static/media/creditUnionIsrael.png": "/pegasus/static/media/creditUnionIsrael.49c955f0d0fcdfacef2a.png",
     "static/media/mortgageComparison__img.png": "/pegasus/static/media/mortgageComparison__img.d9e419572398b26a75bb.png",
@@ -53,18 +53,22 @@
     "static/media/stagesOfWork__img--3.png": "/pegasus/static/media/stagesOfWork__img--3.b236b60e743bc85d9208.png",
     "static/media/favicon.svg": "/pegasus/static/media/favicon.6fc92ccde37656c61c38.svg",
     "static/media/logo.svg": "/pegasus/static/media/logo.6fc92ccde37656c61c38.svg",
+    "static/media/contacts__icon--calendar.svg": "/pegasus/static/media/contacts__icon--calendar.500023481b5e98de6137.svg",
+    "static/media/contacts__icon--wp.svg": "/pegasus/static/media/contacts__icon--wp.e49523dd97c71a1587f9.svg",
     "static/media/phoneFix.svg": "/pegasus/static/media/phoneFix.c85ec0f8e745191d3832.svg",
     "static/media/phone.svg": "/pegasus/static/media/phone.c7ad784b6d573b389b49.svg",
     "static/media/cross.svg": "/pegasus/static/media/cross.f36f880ab21426c18cd7.svg",
     "static/media/crossMenu.svg": "/pegasus/static/media/crossMenu.68fac8436037be473b27.svg",
     "static/media/itemArrow.svg": "/pegasus/static/media/itemArrow.88c6fedebd9568420a01.svg",
+    "static/media/contacts__icon--location.svg": "/pegasus/static/media/contacts__icon--location.e5695f17f6c689ccfc37.svg",
+    "static/media/contacts__icon--phone.svg": "/pegasus/static/media/contacts__icon--phone.98ffabceb34a3be20c85.svg",
     "index.html": "/pegasus/index.html",
     "static/media/menu.svg": "/pegasus/static/media/menu.60d8c87f0b9dfa4212cf.svg",
-    "main.93589586.css.map": "/pegasus/static/css/main.93589586.css.map",
-    "main.1b6beb3c.js.map": "/pegasus/static/js/main.1b6beb3c.js.map"
+    "main.c8e5accc.css.map": "/pegasus/static/css/main.c8e5accc.css.map",
+    "main.55d803f7.js.map": "/pegasus/static/js/main.55d803f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.93589586.css",
-    "static/js/main.1b6beb3c.js"
+    "static/css/main.c8e5accc.css",
+    "static/js/main.55d803f7.js"
   ]
 }
