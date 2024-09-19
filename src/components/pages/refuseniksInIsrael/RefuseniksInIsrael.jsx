@@ -3,6 +3,11 @@ import { Header } from '../../header/Header'
 import { Footer } from '../../footer/Footer'
 import { BasicBlock } from "./blocks/basicBlock/BasicBlock";
 import { ProcessOfWork } from "./blocks/processOfWork/ProcessOfWork";
+import { MortgageForResultsQA } from "../mortgageForRefuseniks/blocks/mortgageForResultsQA/MortgageForResultsQA";
+import { Experts } from "../aboutUs/blocks/experts/Experts";
+import { WhyWe } from "../creditUnion/blocks/whyWe/WhyWe";
+import { StatisticWithForm } from "../creditUnion/blocks/statisticWithForm/StatisticWithForm";
+import { Reviews } from "../home/blocks/reviews/reviews";
 
 import './refuseniksInIsrael.scss';
 
@@ -14,7 +19,12 @@ export const RefuseniksInIsrael = () => {
         <div className="page__container">
           <BasicBlock />
           <ProcessOfWork />
+          <MortgageForResultsQA />
+          <Experts />
+          <WhyWe />
         </div>
+        <StatisticWithForm />
+        <Reviews />
         <Footer />
       </div>
     </main>

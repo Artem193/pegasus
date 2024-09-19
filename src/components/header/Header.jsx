@@ -99,13 +99,13 @@ export const Header = () => {
                       <MenuItem page={'Ипотека для тех, кто получил отказ в Израиле'} link={'/refuseniksInIsrael'} />
                     </li>
                     <li className="header__explanation--item">
-                      <MenuItem page={'page'} link={'/mortgageComparison'} />
+                      <MenuItem page={'Экспертная информация'} link={'/expertsInfo'} />
                     </li>
                   </ul>
                 </div>
               )}
             </div>
-            <MenuItem page={'Page6'} />
+            <MenuItem page={'Контакты'} link={'/contacts'} />
             <MenuItem page={'Page7'} />
           </div>
           <div className="header__contacts">
@@ -174,13 +174,13 @@ export const Header = () => {
                   <MenuItemPhone page={'Ипотека для тех, кто получил отказ в Израиле'} link={'/refuseniksInIsrael'} />
                 </li>
                 <li className="header__explanation--item">
-                  <MenuItemPhone page={'page'} link={'/mortgageComparison'} />
+                  <MenuItemPhone page={'Экспертная информация'} link={'/expertsInfo'} />
                 </li>
               </ul>
             </div>
           )}
         </div>
-        <MenuItemPhone page={'page6'} />
+        <MenuItemPhone page={'Контакты'} link={'/contacts'} />
         <MenuItemPhone page={'page7'} />
         <div className="cross cross--menu" onClick={toggleMenu}></div>
       </ul>

@@ -6,7 +6,7 @@ import './mortgageForResultsQA.scss';
 export const MortgageForResultsQA = () => {
   return (
     <div className="mortgageForResultsQA">
-      <h1 className="mortgageForResultsQA__title">Вопросы и ответы по объединении кредитов</h1>
+      <h1 className="mortgageForResultsQA__title">Часто задаваемые вопросы</h1>
       <div className="mortgageForResultsQA__questions">
         <div className="mortgageForResultsQA__half">
           <Explanation
