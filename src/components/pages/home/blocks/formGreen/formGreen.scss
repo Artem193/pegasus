@@ -45,6 +45,10 @@
       padding-left: 15px;
     }
 
+    &--error {
+      border: 1px solid red;
+    }
+
     &--submit {
       color: #274A3F;
       background-color: #FFD700;

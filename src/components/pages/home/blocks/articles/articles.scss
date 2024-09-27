@@ -43,15 +43,24 @@
 
     @media (min-width: 1024px) {
       padding: 30px 8px;
-      min-height: 600px;
+      // height: 620px;
+    }
+
+    &--height {
+      height: 620px;
     }
   }
 
   &__photo {
     padding-bottom: 20px;
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
 
     @media (min-width: 1024px) {
       padding-bottom: 30px;
+      width: 400px;
+      height: 255px;
     }
   }
 

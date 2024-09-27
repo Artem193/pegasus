@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from 'react-router-dom';
 import { MenuItem } from "./menuItem/MenuItem";
 import { MenuItemPhone } from "./menuItemPhone/MenuItemPhone";
@@ -7,28 +7,145 @@ import './header.scss';
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isFormOpen, setIsFormOpen] = useState(false);
+  const [isListOpen, setIsListOpen] = useState(false);
+  const [isListOpen2, setIsListOpen2] = useState(false);
+  const [isListOpen3, setIsListOpen3] = useState(false);
+  const [isListOpen4, setIsListOpen4] = useState(false);
+
+  const menuRef = useRef(null);
+  const formRef = useRef(null);
+  const listRef1 = useRef(null);
+  const listRef2 = useRef(null);
+  const listRef3 = useRef(null);
+  const listRef4 = useRef(null);
+
+  const [name, setName] = useState('');
+  const [phone, setPhone] = useState('');
+  const [email, setEmail] = useState('');
+  const [creditAmount, setCreditAmount] = useState('');
+  const [ownership, setOwnership] = useState('');
+  const [errors, setErrors] = useState({});
+
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const [isFormOpen, setIsFormOpen] = useState(false);
-
   const toggleForm = () => {
     setIsFormOpen(!isFormOpen);
   };
 
-  const [isListOpen, setIsListOpen] = useState(false);
-
   const toggleList = () => {
-    setIsListOpen(!isListOpen);
-  }
-
-  const [isListOpen2, setIsListOpen2] = useState(false);
+    setIsListOpen(prevState => {
+      // Закриваємо другий список при відкритті першого
+      if (!prevState) setIsListOpen2(false);
+      return !prevState;
+    });
+  };
 
   const toggleList2 = () => {
-    setIsListOpen2(!isListOpen2);
-  }
+    setIsListOpen2(prevState => {
+      // Закриваємо перший список при відкритті другого
+      if (!prevState) setIsListOpen(false);
+      return !prevState;
+    });
+  };
+
+  const toggleList3 = () => {
+    setIsListOpen3(prevState => {
+      // Закриваємо перший список при відкритті другого
+      if (!prevState) setIsListOpen(false);
+      return !prevState;
+    });
+  };
+
+  const toggleList4 = () => {
+    setIsListOpen4(prevState => {
+      // Закриваємо перший список при відкритті другого
+      if (!prevState) setIsListOpen(false);
+      return !prevState;
+    });
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      // Закриття меню при кліку поза межами
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsMenuOpen(false);
+      }
+      if (formRef.current && !formRef.current.contains(event.target)) {
+        setIsFormOpen(false);
+      }
+      // Закриття списків при кліку поза ними
+      if (listRef1.current && !listRef1.current.contains(event.target)) {
+        setIsListOpen(false);
+      }
+      if (listRef2.current && !listRef2.current.contains(event.target)) {
+        setIsListOpen2(false);
+      }
+      if (listRef3.current && !listRef3.current.contains(event.target)) {
+        setIsListOpen3(false);
+      }
+      if (listRef4.current && !listRef4.current.contains(event.target)) {
+        setIsListOpen4(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [menuRef, formRef, listRef1, listRef2, listRef3, listRef4]);
+
+  const [currentPage, setCurrentPage] = useState('/');
+
+  const validateForm = () => {
+    const newErrors = {};
+
+    // Валідація імені (мінімум 2 символи)
+    if (name.trim().length < 2) {
+      newErrors.name = true;
+    }
+
+    // Валідація телефону (простий регулярний вираз для перевірки формату)
+    const phonePattern = /^[+]?[(]?[0-9]{1,4}[)]?[-\s./0-9]*$/;
+    if (!phonePattern.test(phone)) {
+      newErrors.phone = true;
+    }
+
+    // Валідація email (перевірка на правильний формат)
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+      newErrors.email = true;
+    }
+
+    // Валідація суми кредиту (тільки число)
+    if (isNaN(creditAmount) || creditAmount <= 0) {
+      newErrors.creditAmount = true;
+    }
+
+    // Валідація вибору з селектора
+    if (!ownership) {
+      newErrors.ownership = true;
+    }
+
+    setErrors(newErrors);
+
+    // Повертаємо true, якщо помилок немає
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Перевіряємо, чи форма валідна
+    if (validateForm()) {
+      console.log("Форма успішно відправлена", { name, phone, email, creditAmount, ownership });
+    } else {
+      console.log("Валідація не пройдена");
+    }
+  };
 
   return (
     <>
@@ -36,18 +153,15 @@ export const Header = () => {
         <nav className="header__nav">
           <button className="header__menu" onClick={toggleMenu}></button>
           <div className="header__items header__items--part1">
-            <MenuItem page={'Главная'} link={'/'} />
-            <MenuItem page={'О нас'} link={'/aboutUs'} />
-            <MenuItem page={'Объединение кредитов'} link={'/creditUnion'}
-            />
+            <MenuItem page={'Главная'} link={'/'} active={currentPage === '/'} onClick={() => setCurrentPage('/')} />
+            <MenuItem page={'О нас'} link={'/aboutUs'} active={currentPage === '/aboutUs'} onClick={() => setCurrentPage('/aboutUs')} />
+            <MenuItem page={'Объединение кредитов'} link={'/creditUnion'} active={currentPage === '/creditUnion'} onClick={() => setCurrentPage('/creditUnion')} />
           </div>
           <Link to="/" className="header__logo"></Link>
           <div className="header__items header__items--part2">
-            <div className="header__explanation">
-              <div className="header__explanation--active" onClick={toggleList}>
-                <MenuItem
-                  page={'Обратная ипотека'}
-                />
+            <div className="header__explanation" ref={listRef1}>
+              <div className="header__explanation--act" onClick={toggleList}>
+                <p className="item">Обратная ипотека</p>
                 <span className={`header__explanation--icon ${isListOpen ? 'open' : ''}`}>
                   ▼
                 </span>
@@ -71,11 +185,9 @@ export const Header = () => {
                 </div>
               )}
             </div>
-            <div className="header__explanation">
-              <div className="header__explanation--active" onClick={toggleList2}>
-                <MenuItem
-                  page={'Наши услуги'}
-                />
+            <div className="header__explanation" ref={listRef2}>
+              <div className="header__explanation--act" onClick={toggleList2}>
+                <p className="item">Наши услуги</p>
                 <span className={`header__explanation--icon ${isListOpen2 ? 'open' : ''}`}>
                   ▼
                 </span>
@@ -106,7 +218,6 @@ export const Header = () => {
               )}
             </div>
             <MenuItem page={'Контакты'} link={'/contacts'} />
-            <MenuItem page={'Page7'} />
           </div>
           <div className="header__contacts">
             <a href="#" className="header__icon header__icon--wp"></a>
@@ -118,16 +229,16 @@ export const Header = () => {
         <MenuItemPhone page={'Главная'} link={'/'} />
         <MenuItemPhone page={'О нас'} link={'/aboutUs'} />
         <MenuItemPhone page={'Объединение кредитов'} link={'/creditUnion'} />
-        <div className={`header__explanation ${isListOpen ? 'header__explanation--open' : ''}`}>
-          <div className="header__explanation--active" onClick={toggleList}>
+        <div className={`header__explanation ${isListOpen3 ? 'header__explanation--open' : ''}`} ref={listRef3}>
+          <div className="header__explanation--act" onClick={toggleList3}>
             <MenuItemPhone
               page={'Обратная ипотека'}
             />
-            <span className={`header__explanation--icon ${isListOpen ? 'open' : ''}`}>
+            <span className={`header__explanation--icon ${isListOpen3 ? 'open' : ''}`}>
               ▼
             </span>
           </div>
-          {isListOpen && (
+          {isListOpen3 && (
             <div className="header__explanation--dropdown">
               <ul className="header__explanation--list">
                 <li className="header__explanation--item">
@@ -146,16 +257,16 @@ export const Header = () => {
             </div>
           )}
         </div>
-        <div className={`header__explanation ${isListOpen2 ? 'header__explanation--open' : ''}`}>
-          <div className="header__explanation--active" onClick={toggleList2}>
+        <div className={`header__explanation ${isListOpen4 ? 'header__explanation--open' : ''}`} ref={listRef4}>
+          <div className="header__explanation--act" onClick={toggleList4}>
             <MenuItemPhone
               page={'Наши услуги'}
             />
-            <span className={`header__explanation--icon ${isListOpen2 ? 'open' : ''}`}>
+            <span className={`header__explanation--icon ${isListOpen4 ? 'open' : ''}`}>
               ▼
             </span>
           </div>
-          {isListOpen2 && (
+          {isListOpen4 && (
             <div className="header__explanation--dropdown">
               <ul className="header__explanation--list">
                 <li className="header__explanation--item">
@@ -181,61 +292,79 @@ export const Header = () => {
           )}
         </div>
         <MenuItemPhone page={'Контакты'} link={'/contacts'} />
-        <MenuItemPhone page={'page7'} />
         <div className="cross cross--menu" onClick={toggleMenu}></div>
       </ul>
       <a href="tel:+1 234 555-55-55" className="button button--phone">
         <p className="number">072-3456789</p>
       </a>
-      <a href="#" className="button button--wp"></a>
+      {/* <a href="#" className="button button--wp"></a> */}
       <button className="button button--form" onClick={toggleForm}>
         Записаться на консультацию
       </button>
-      <form action="" className={`form ${isFormOpen ? 'form--active' : 'form--hidden'}`}>
-        <p className="form__title">Оставьте контактные данные или позвоните нам
+      <form action="" className={`form ${isFormOpen ? 'form--active' : 'form--hidden'}`} ref={formRef} onSubmit={handleSubmit}>
+        <p className="form__title">
+          Оставьте контактные данные или позвоните нам
           <br />
           <a href="tel:+1 234 555-55-55" className="form__link">
             072-3456789
           </a>
         </p>
+
         <input
           type="text"
           id="name"
-          className="form__input"
+          className={`form__input ${errors.name ? 'form__input--error' : ''}`}
           placeholder="Имя"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
         />
+
         <input
           type="tel"
           id="phone"
-          className="form__input"
+          className={`form__input ${errors.phone ? 'form__input--error' : ''}`}
           placeholder="Телефон"
+          value={phone}
+          onChange={(e) => setPhone(e.target.value)}
         />
+
         <input
           type="email"
           id="email"
-          className="form__input"
+          className={`form__input ${errors.email ? 'form__input--error' : ''}`}
           placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
+
         <input
           type="number"
           id="number"
-          className="form__input"
+          className={`form__input ${errors.creditAmount ? 'form__input--error' : ''}`}
           placeholder="Сумма кредита"
+          value={creditAmount}
+          onChange={(e) => setCreditAmount(e.target.value)}
         />
+
         <select
           name="options"
           id="select"
-          className="form__input"
+          className={`form__input ${errors.ownership ? 'form__input--error' : ''}`}
+          value={ownership}
+          onChange={(e) => setOwnership(e.target.value)}
         >
-          <option value="" disabled selected>Вы владеете квартирой?</option>
+          <option value="" disabled>Вы владеете квартирой?</option>
           <option value="option1">Да</option>
           <option value="option2">Нет</option>
         </select>
+
         <input
           type="submit"
           id="submit"
           className="form__input form__input--submit"
+          value="Отправить"
         />
+
         <div className="cross" onClick={toggleForm}></div>
       </form>
     </>

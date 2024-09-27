@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import './about.scss';
 
 export const About = () => {
@@ -10,9 +12,9 @@ export const About = () => {
         <p className="about__text">
           С 2010 года мы специализируемся на ипотеке и финансовых услугах. Наша компания предоставляет финансовый консалтинг, ипотеку для тех, кому отказали в банках, консолидацию кредитов, ипотеку для пожилых людей, юридические консультации и страхование. Мы сопровождаем клиентов как в банковской, так и в небанковской сферах и сотрудничаем с ведущей юридической фирмой по недвижимости. Наши методы, опыт и профессионализм гарантируют успешное решение всех ваших финансовых вопросов
         </p>
-        <a href="#" className="color-yellow" >
+        <Link to='./aboutUs' className="color-yellow">
           <p className="about__subtitle color-yellow">Подробнее</p>
-        </a>
+        </Link>
       </div>
       <div className="about__person">
         <div className="about__photo"></div>

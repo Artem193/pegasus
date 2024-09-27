@@ -1,0 +1,61 @@
+.mortgagesNegativeBDI {
+  flex: 75%;
+  width: 100%;
+  scroll-behavior: smooth;
+
+  &__text {
+    margin: 0 0 80px;
+    font-size: 16px;
+    color: #274A3F;
+    font-weight: 400;
+
+    @media (min-width: 1024px) {
+      font-size: 20px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  
+  &__subtitle {
+    margin: 0;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #274A3F;
+
+    @media (min-width: 1024px) {
+      padding-bottom: 30px;
+      font-size: 22px;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      height: 140px; 
+      margin-top: -140px; 
+    }
+  }
+
+  &__item {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #274A3F;
+  }
+
+  &__title {
+    margin: 0 0 30px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #274A3F;
+    text-align: center;
+
+    @media (min-width: 1024px) {
+      font-size: 40px;
+      margin: 0 0 60px;
+    }
+  }
+}

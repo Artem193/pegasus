@@ -22,7 +22,7 @@ export const CalculateReverseMortgage = () => {
             Что такое обратная ипотека?
           </h2>
           <p className="calculateReverseMortgage__text">
-            <Link to={'/calculateReverseMortgage'} className="calculateReverseMortgage__link">Обратная ипотека</Link> — это особый вид кредита, предназначенный для людей в возрасте 55 лет и старше, который выдаётся под залог их существующей недвижимости. В отличие от обычной ипотеки, этот финансовый продукт имеет уникальные особенности и преимущества.
+            <Link to='/reverseMortgage' className="calculateReverseMortgage__link">Обратная ипотека</Link> — это особый вид кредита, предназначенный для людей в возрасте 55 лет и старше, который выдаётся под залог их существующей недвижимости. В отличие от обычной ипотеки, этот финансовый продукт имеет уникальные особенности и преимущества.
           </p>
           <h2 className="calculateReverseMortgage__subtitle">
             Ключевые особенности обратной ипотеки

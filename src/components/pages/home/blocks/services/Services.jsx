@@ -1,5 +1,6 @@
 import React from "react";
 import './services.scss'
+import { Link } from "react-router-dom";
 
 export const Services = () => {
   return (
@@ -24,11 +25,11 @@ export const Services = () => {
               </p>
             </div>
           </div>
-          <a href="#" className="services__link">
+          <Link to='./creditUnion' className="services__link">
             <div className="services__button">
               Объединение кредитов
             </div>
-          </a>
+          </Link>
         </div>
         <div className="services__service">
           <h2 className="services__subtitle">Ипотека для людей, получивших отказ в банке</h2>
@@ -52,11 +53,11 @@ export const Services = () => {
               </p>
             </div>
           </div>
-          <a href="#" className="services__link">
+          <Link to='./bankRefusal' className="services__link">
             <div className="services__button">
               Ипотека если вы получили отказ
             </div>
-          </a>
+          </Link>
         </div>
         <div className="services__service">
           <h2 className="services__subtitle">Ипотека для пожилых граждан</h2>
@@ -80,11 +81,11 @@ export const Services = () => {
               </p>
             </div>
           </div>
-          <a href="#" className="services__link">
+          <Link to='./reverseMortgage' className="services__link">
             <div className="services__button">
               Пенсионная ипотека
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

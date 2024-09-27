@@ -4,13 +4,29 @@
     color: #FFFFEC;
     font-size: 16px;
     font-weight: 500;
+    position: relative; // Додано для позиціонування псевдоелемента
 
     &:hover {
-      color: #FFD700;
+      color: #FFD700; // Колір при наведенні
+    }
+
+    &.active {
+      color: #FFD700; // Колір активного пункту
+      font-weight: 700; // Жирний шрифт для активного пункту
+
+      &::after {
+        content: ''; // Псевдоелемент для підкреслення
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -5px; // Відстань до тексту
+        height: 2px; // Висота підкреслення
+        background-color: #FFD700; // Колір підкреслення
+      }
     }
   }
 
-  @media (min-width: 1404px) {
+  @media (min-width: 1700px) {
     font-size: 22px;
   }
 }

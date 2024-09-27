@@ -9,9 +9,10 @@ import { Statistics } from "./blocks/statistics/Statistics";
 import { Advantages } from "./blocks/advantages/Advantages";
 import { Reviews } from "./blocks/reviews/reviews";
 import { FormGreenBigger } from "./blocks/formGreenBigger/FormGreenBigger";
-import { Articles } from "./blocks/articles/Articles";
+import { Articles } from "./blocks/articles/Articles.jsx";
 import { FormWhite } from "./blocks/formWhite/FormWhite";
 import { Footer } from "../../footer/Footer";
+import { articles } from './blocks/articles/articles.js'
 
 import './home.scss';
 
@@ -35,7 +36,7 @@ export const Home = () => {
         <Reviews />
         <FormGreenBigger />'
         <div className="page__container">
-          <Articles />
+          <Articles articles={articles} title='Экспертная информация' articleClass='articles__article--height'/>
         </div>
         <div className="page__container">
           <FormWhite />

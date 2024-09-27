@@ -37,6 +37,10 @@
     font-size: 15px;
     padding-left: 10px;
     box-sizing: border-box;
+
+    &--error {
+      border: 1px solid red;
+    }
   
     @media (min-width: 1024px) {
       height: 35px;
