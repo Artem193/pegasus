@@ -20,11 +20,11 @@ export const Contacts = () => {
             </div>
             <div className="contacts__contact">
               <div className="contacts__icon contacts__icon--phone"></div>
-              <p className="contacts__text">Телефон: </p>
+              <p className="contacts__text">Телефон: <a href="+972533454423" className="contacts__link">053-3454423</a></p>
             </div>
             <div className="contacts__contact">
               <div className="contacts__icon contacts__icon--wp"></div>
-              <p className="contacts__text">Whatsapp</p>
+              <p className="contacts__text">Whatsapp: <a href="https://wa.me/972533454423" className="contacts__link">053-3454423</a></p>
             </div>
             <div className="contacts__contact">
               <div className="contacts__icon contacts__icon--calendar"></div>

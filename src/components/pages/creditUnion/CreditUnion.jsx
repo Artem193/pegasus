@@ -44,7 +44,7 @@ export const CreditUnion = () => {
           <WhyWe />
         </div>
         <StatisticWithForm />
-        <Reviews />
+        {/* <Reviews /> */}
         <FormWhite />
         <Footer />
       </div>

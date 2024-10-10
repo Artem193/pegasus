@@ -43,7 +43,7 @@ export const ReverseMortgage = () => {
           <WhyWe />
         </div>
         <StatisticWithForm />
-        <Reviews />
+        {/* <Reviews /> */}
         <div className="page__container">
           <WhatIs />
         </div>

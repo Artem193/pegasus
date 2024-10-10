@@ -19,8 +19,8 @@ export const FormReverseMashkanta = () => {
       </h2>
       <p className="formReverseMashkanta__title">Оставьте контактные данные или позвоните нам
         <br />
-        <a href="tel:+1 234 555-55-55" className="formReverseMashkanta__link">
-          072-3456789
+        <a href="tel:+972533454423" className="formReverseMashkanta__link">
+          053-3454423
         </a>
       </p>
       <div className="formReverseMashkanta__inputs">

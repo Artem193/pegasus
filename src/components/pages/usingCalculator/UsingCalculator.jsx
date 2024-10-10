@@ -5,7 +5,7 @@ import { FormWhite } from '../home/blocks/formWhite/FormWhite'
 import { FormFromUsCalc } from "./formFromUsCalc/FormFromUsCalc";
 import { NavUsCalc } from "./NavUsCalc";
 
-import photoRehtman from '../../../images/basic1.png'
+import photoRehtman from '../../../images/Rehtman.png'
 
 import './usingCalculator.scss';
 
@@ -19,7 +19,7 @@ export const UsingCalculator = ({ content, fixedArticles, titles }) => {
             {content}
             <div className="usingCalculator__navForm">
               <FormFromUsCalc />
-              <NavUsCalc titles={titles}/>
+              <NavUsCalc titles={titles} />
               {fixedArticles}
             </div>
           </div>
@@ -31,10 +31,20 @@ export const UsingCalculator = ({ content, fixedArticles, titles }) => {
             />
             <div className="usingCalculator__description">
               <h2 className="usingCalculator__subtitle">
-                Должность Евгений Рехтман
+                Генеральный директор
+                <br />
+                Евгений Рехтман
               </h2>
               <p className="usingCalculator__text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe magnam ut quas omnis ipsa ipsam culpa laborum? Assumenda, quo maxime! Harum corrupti asperiores explicabo illo dicta itaque? Inventore, nisi architecto?
+                Консультант по ипотечным кредитам с опытом работы более 2 лет.
+                Прошёл курс консультирования по ипотеке от имени Псагот-колледжа. Закончил курс Планирование выхода на пенсию в Финансовой Академии bdo. Прошел сертификацию по пенсионному планированию от имени Орина Шапелтера.
+                Имею большой опыт управления портфелями частных и бизнес-клиентов.
+                Привожу компанию к совершенству.
+                <br />
+                <br />
+                סיים בהצלחה את קורס מתמחים בפיננסים למתקדמים
+                מטעם אורין שפלטר
+                סיים לימודים ניהול תהליכי פרישה האקדמיה לפיננסים BDOסיים הסמכה בתכנון פרישה מטעם אורין שפלטר
               </p>
             </div>
           </div>

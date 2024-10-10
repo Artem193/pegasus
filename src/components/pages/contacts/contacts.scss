@@ -95,6 +95,11 @@
 
   &__list {
     margin: 0 auto 50px;
-    width: 200px;
+    width: max-content;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #274A3F;
   }
 }

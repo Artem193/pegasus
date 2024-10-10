@@ -35,7 +35,7 @@ export const MortgageForRefuseniks = () => {
           <WhyWe />
         </div>
         <StatisticWithForm />
-        <Reviews />
+        {/* <Reviews /> */}
         <div className="page__container">
           <FormWhite />
         </div>

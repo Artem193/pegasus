@@ -41,8 +41,8 @@ export const CallToActionForm = () => {
     <form action="" className='callToActionForm' onSubmit={handleSubmit}>
       <p className="callToActionForm__title">Запросите бесплатную консультацию, заполнив форму ниже или позвоните нам по телефону
         <br />
-        <a href="tel:+1 234 555-55-55" className="callToActionForm__link">
-          072-3456789
+        <a href="tel:+972533454423" className="callToActionForm__link">
+          053-3454423
         </a>
       </p>
       <div className="callToActionForm__inputs">

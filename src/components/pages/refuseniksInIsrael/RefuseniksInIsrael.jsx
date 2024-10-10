@@ -21,10 +21,12 @@ export const RefuseniksInIsrael = () => {
           <ProcessOfWork />
           <MortgageForResultsQA />
           <Experts />
-          <WhyWe />
         </div>
         <StatisticWithForm />
-        <Reviews />
+        <div className="page__container">
+          <WhyWe />
+        </div>
+        {/* <Reviews /> */}
         <Footer />
       </div>
     </main>

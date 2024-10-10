@@ -41,8 +41,8 @@ export const FormFromUsCalc = () => {
     <form action="" className='formFromUsCalc' onSubmit={handleSubmit}>
       <p className="formFromUsCalc__title">Запросите бесплатную консультацию, заполнив форму ниже или позвоните нам по телефону
         <br />
-        <a href="tel:+1 234 555-55-55" className="formFromUsCalc__link">
-          072-3456789
+        <a href="tel:+972533454423" className="formFromUsCalc__link">
+          053-3454423
         </a>
       </p>
       <div className="formFromUsCalc__inputs">

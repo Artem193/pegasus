@@ -105,7 +105,7 @@ export const CalculateMortgage = () => {
           <Experts />
           <WhyWe />
         </div>
-        <Reviews />
+        {/* <Reviews /> */}
         <div className="page_container">
           <FormWhite />
         </div>
