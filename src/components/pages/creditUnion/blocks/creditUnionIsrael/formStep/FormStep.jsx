@@ -156,10 +156,10 @@ export const FormStep = () => {
             <option value=""></option>
             <option value="1">До 1 000 000 шекелей</option>
             <option value="2">1 000 000 - 2 000 000 шекелей</option>
-            <option value="2">2 000 000 - 3 000 000 шекелей</option>
-            <option value="2">3 000 000 - 4 000 000 шекелей</option>
-            <option value="2">4 000 000 - 5 000 000 шекелей</option>
-            <option value="3">Свыше 5 000 000 шекелей</option>
+            <option value="3">2 000 000 - 3 000 000 шекелей</option>
+            <option value="4">3 000 000 - 4 000 000 шекелей</option>
+            <option value="5">4 000 000 - 5 000 000 шекелей</option>
+            <option value="6">Свыше 5 000 000 шекелей</option>
           </select>
           <div className='formStep__buttons'>
             <button
@@ -228,9 +228,9 @@ export const FormStep = () => {
             <option value=""></option>
             <option value="1">До 500 000 шекелей</option>
             <option value="2">500 000 - 1 000 000 шекелей</option>
-            <option value="2">1 000 000 - 2 000 000 шекелей</option>
-            <option value="2">2 000 000 - 3 000 000 шекелей</option>
-            <option value="3">Свыше 3 000 000 шекелей</option>
+            <option value="3">1 000 000 - 2 000 000 шекелей</option>
+            <option value="4">2 000 000 - 3 000 000 шекелей</option>
+            <option value="5">Свыше 3 000 000 шекелей</option>
           </select>
           <div className='formStep__buttons'>
             <button

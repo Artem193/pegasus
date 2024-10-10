@@ -8,13 +8,23 @@ export const Experts = () => {
       <div className="experts__people">
         <div className="experts__man">
           <div className="experts__photo experts__photo--1"></div>
-          <p className="experts__name"><strong>Евгений Рехтман</strong><br />Должность</p>
-          <p className="experts__text">Короткая биография Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, non at omnis minus eaque atque officia sint expedita incidunt culpa repellendus vitae ab iusto doloremque laborum inventore quis. Maxime, repellat!</p>
+          <p className="experts__name"><strong>Евгений Рехтман</strong><br />Генеральный директор
+          </p>
+          <p className="experts__text">Консультант по ипотечным кредитам с опытом работы более 2 лет.
+            Прошёл курс консультирования по ипотеке от имени Псагот-колледжа. Закончил курс Планирование выхода на пенсию в Финансовой Академии bdo. Прошел сертификацию по пенсионному планированию от имени Орина Шапелтера.
+            Имею большой опыт управления портфелями частных и бизнес-клиентов.
+            Привожу компанию к совершенству.
+            <br />
+            <br />
+            סיים בהצלחה את קורס מתמחים בפיננסים למתקדמים
+            מטעם אורין שפלטר
+            סיים לימודים ניהול תהליכי פרישה האקדמיה לפיננסים BDOסיים הסמכה בתכנון פרישה מטעם אורין שפלטר</p>
         </div>
         <div className="experts__man">
           <div className="experts__photo experts__photo--2"></div>
-          <p className="experts__name"><strong>Роман Гозданкер</strong><br />Должность</p>
-          <p className="experts__text">Короткая биография Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, non at omnis minus eaque atque officia sint expedita incidunt culpa repellendus vitae ab iusto doloremque laborum inventore quis. Maxime, repellat!</p>
+          <p className="experts__name"><strong>Анна сломчински </strong><br />Финансовый консультант<br />
+            Страховой агент</p>
+          <p className="experts__text">Имею высшее образование в области экономики и делового администрирования, специализацию «инвестиционный консалтинг», лицензию пенсионного агента. Имею 10-летний опыт работы в банковской системе, за время которого получила богатые знания в этой области, работала руководителем команды по работе с частными клиентами и старшим утверждающим в центре фондового рынка банка. За этот период я ​​развила отличные способности в управлении отношениями с клиентами, предоставлении качественных финансовых консультаций и решении динамичных задач на инвестиционном рынке, обеспечивая при этом профессиональные и комплексные услуги каждому клиенту.</p>
         </div>
       </div>
     </div>

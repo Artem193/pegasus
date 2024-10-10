@@ -20,18 +20,19 @@ export const Footer = () => {
                 </a>
               </li>
               <li className="footer__contact">
-                <a href="tel:+1 234 555-55-55" className="footer__contact--link">
-                  Телефон: **********
+                <a
+                  href="tel:+972533454423"
+                  className="footer__contact--link"
+                >
+                  Телефон: 053-3454423
                 </a>
               </li>
               <li className="footer__contact">
-                <a href="tel:+1 234 555-55-55" className="footer__contact--link">
-                  Факс: ************
-                </a>
-              </li>
-              <li className="footer__contact">
-                <a href="mailto:" className="footer__contact--link">
-                  Электронная почта: ********
+                <a
+                  href="mailto: mortgagespegasus@gmail.com"
+                  className="footer__contact--link"
+                >
+                  Электронная почта: mortgagespegasus@gmail.com
                 </a>
               </li>
             </ul>

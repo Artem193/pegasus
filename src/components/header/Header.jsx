@@ -220,8 +220,18 @@ export const Header = () => {
             <MenuItem page={'Контакты'} link={'/contacts'} />
           </div>
           <div className="header__contacts">
-            <a href="#" className="header__icon header__icon--wp"></a>
-            <a href="tel:+1 234 555-55-55" className="header__icon header__icon--phone"></a>
+            <a
+              href="https://wa.me/972533454423"
+              className="header__icon header__icon--wp"
+              target="_blank"
+              rel="noopener noreferrer"
+            ></a>
+            <a
+              href="tel:+972533454423"
+              className="header__icon header__icon--phone"
+              target="_blank"
+              rel="noopener noreferrer"
+            ></a>
           </div>
         </nav>
       </header>
@@ -294,8 +304,13 @@ export const Header = () => {
         <MenuItemPhone page={'Контакты'} link={'/contacts'} />
         <div className="cross cross--menu" onClick={toggleMenu}></div>
       </ul>
-      <a href="tel:+1 234 555-55-55" className="button button--phone">
-        <p className="number">072-3456789</p>
+      <a
+        href="tel:+972533454423"
+        className="button button--phone"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <p className="number">053-3454423</p>
       </a>
       {/* <a href="#" className="button button--wp"></a> */}
       <button className="button button--form" onClick={toggleForm}>
@@ -305,8 +320,13 @@ export const Header = () => {
         <p className="form__title">
           Оставьте контактные данные или позвоните нам
           <br />
-          <a href="tel:+1 234 555-55-55" className="form__link">
-            072-3456789
+          <a
+            href="tel:+972533454423"
+            className="form__link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            053-3454423
           </a>
         </p>
 

@@ -314,7 +314,6 @@
 
 .form {
   width: 340px;
-  height: 360px;
   background-color: #FFFFEC;
   padding: 0;
   margin: 0;
@@ -328,6 +327,7 @@
   font-weight: 500;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  box-shadow: 1px 1px 4px #274A3F;
 
   @media (min-width: 1024px) {
     width: 500px;
@@ -338,7 +338,7 @@
 
 
   &--hidden {
-    bottom: -360px;
+    bottom: -100%;
 
     @media (min-width: 1024px) {
       bottom: -600px;
@@ -357,7 +357,7 @@
 
   &__input {
     width: 240px;
-    height: 30px;
+    height: 40px;
     margin: 5px 40px;
     border-radius: 10px;
     background-color: #D9D9D9;
