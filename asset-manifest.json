@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pegasus/static/css/main.3aa6b2fd.css",
-    "main.js": "/pegasus/static/js/main.eb62d643.js",
+    "main.css": "/pegasus/static/css/main.f55179e0.css",
+    "main.js": "/pegasus/static/js/main.219a9df7.js",
     "static/media/mortgageWithPegasus.png": "/pegasus/static/media/mortgageWithPegasus.643caaaae8009b368138.png",
     "static/media/basic1.png": "/pegasus/static/media/basic1.9b19b78cde8a636cc2bf.png",
     "static/media/basic2.png": "/pegasus/static/media/basic2.4bff43d7798db33afeef.png",
@@ -65,11 +65,11 @@
     "static/media/contacts__icon--phone.svg": "/pegasus/static/media/contacts__icon--phone.98ffabceb34a3be20c85.svg",
     "index.html": "/pegasus/index.html",
     "static/media/menu.svg": "/pegasus/static/media/menu.60d8c87f0b9dfa4212cf.svg",
-    "main.3aa6b2fd.css.map": "/pegasus/static/css/main.3aa6b2fd.css.map",
-    "main.eb62d643.js.map": "/pegasus/static/js/main.eb62d643.js.map"
+    "main.f55179e0.css.map": "/pegasus/static/css/main.f55179e0.css.map",
+    "main.219a9df7.js.map": "/pegasus/static/js/main.219a9df7.js.map"
   },
   "entrypoints": [
-    "static/css/main.3aa6b2fd.css",
-    "static/js/main.eb62d643.js"
+    "static/css/main.f55179e0.css",
+    "static/js/main.219a9df7.js"
   ]
 }
