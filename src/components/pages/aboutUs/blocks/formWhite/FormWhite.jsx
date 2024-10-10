@@ -63,8 +63,8 @@ export const FormWhite = () => {
   };
 
   return (
-    <form 
-      action="" 
+    <form
+      action=""
       className={`formWhite ${inView ? 'animate' : ''}`}
       ref={ref}
       onSubmit={handleSubmit}
@@ -74,8 +74,8 @@ export const FormWhite = () => {
       </h2>
       <p className="formWhite__title">Оставьте контактные данные или позвоните нам
         <br />
-        <a href="tel:+1 234 555-55-55" className="formWhite__link">
-          072-3456789
+        <a href="tel:+972533454423" className="formWhite__link">
+          053-3454423
         </a>
       </p>
       <div className="formWhite__inputs">

@@ -10,10 +10,12 @@
   &__content {
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
     gap: 20px;
     align-items: center;
 
     @media (min-width: 1024px) {
+      flex-direction: row;
       gap: 60px;
     }
   }

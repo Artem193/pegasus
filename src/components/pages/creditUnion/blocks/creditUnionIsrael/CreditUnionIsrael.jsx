@@ -16,7 +16,7 @@ export const CreditUnionIsrael = () => {
         </p>
         <h2 className="creditUnionIsrael__subtitle">
           Бесплатная консультация:<br />
-          <a href="tel:+1 234 555-55-55" className="creditUnionIsrael__link"> 071-1234567</a>
+          <a href="tel:+972533454423" className="creditUnionIsrael__link"> 053-3454423</a>
         </h2>
         <h2 className="creditUnionIsrael__subtitle">
           <span className="color-green">Оцените свои варианты объединения кредитов</span> бесплатно!

@@ -33,8 +33,8 @@ export const Home = () => {
         <div className="page__container">
           <Advantages />
         </div>
-        {/* <Reviews /> */}
-        <FormGreenBigger />'
+        <Reviews />
+        <FormGreenBigger />
         <div className="page__container">
           <Articles articles={articles} title='Экспертная информация' articleClass='articles__article--height'/>
         </div>
