@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./itemFromStatistics.scss";
 
-export const ItemFromStatistics = ({ numbers, text, duration = 2000 }) => {
+export const ItemFromStatistics = ({ numbers, text, duration = 1000 }) => {
   const [count, setCount] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);

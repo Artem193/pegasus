@@ -26,6 +26,51 @@ export const Header = () => {
   const [creditAmount, setCreditAmount] = useState('');
   const [ownership, setOwnership] = useState('');
   const [errors, setErrors] = useState({});
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (validateForm()) {
+      console.log("Лид отправлен успешно", { name, phone, email, creditAmount, ownership });
+    } else {
+      return;
+    }
+
+    const formData = {
+      name,
+      phone,
+      email,
+      creditAmount,
+      ownership,
+    };
+
+    try {
+      const response = await fetch('http://localhost:5000/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setIsModalVisible(true);
+      } else {
+        alert('Ошибка при отправлении');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+
+    setName('');
+    setPhone('');
+    setEmail('');
+    setCreditAmount('');
+    setOwnership('');
+  }
 
 
   const toggleMenu = () => {
@@ -110,7 +155,7 @@ export const Header = () => {
 
     // Валідація телефону (простий регулярний вираз для перевірки формату)
     const phonePattern = /^[+]?[(]?[0-9]{1,4}[)]?[-\s./0-9]*$/;
-    if (!phonePattern.test(phone)) {
+    if (!phonePattern.test(phone) || phone.trim().length < 9) {
       newErrors.phone = true;
     }
 
@@ -136,15 +181,8 @@ export const Header = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    // Перевіряємо, чи форма валідна
-    if (validateForm()) {
-      console.log("Форма успішно відправлена", { name, phone, email, creditAmount, ownership });
-    } else {
-      console.log("Валідація не пройдена");
-    }
+  const closeModal = () => {
+    setIsModalVisible(false);
   };
 
   return (
@@ -221,13 +259,13 @@ export const Header = () => {
           </div>
           <div className="header__contacts">
             <a
-              href="https://wa.me/972533454423"
+              href="https://wa.me/972545991090"
               className="header__icon header__icon--wp"
               target="_blank"
               rel="noopener noreferrer"
             ></a>
             <a
-              href="tel:+972533454423"
+              href="tel:+972545991090"
               className="header__icon header__icon--phone"
               target="_blank"
               rel="noopener noreferrer"
@@ -305,12 +343,12 @@ export const Header = () => {
         <div className="cross cross--menu" onClick={toggleMenu}></div>
       </ul>
       <a
-        href="tel:+972533454423"
+        href="tel:+972545991090"
         className="button button--phone"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <p className="number">053-3454423</p>
+        <p className="number">053-5991090</p>
       </a>
       {/* <a href="#" className="button button--wp"></a> */}
       <button className="button button--form" onClick={toggleForm}>
@@ -321,12 +359,12 @@ export const Header = () => {
           Оставьте контактные данные или позвоните нам
           <br />
           <a
-            href="tel:+972533454423"
+            href="tel:+972535991090"
             className="form__link"
             target="_blank"
             rel="noopener noreferrer"
           >
-            053-3454423
+            053-5991090
           </a>
         </p>
 
@@ -374,19 +412,23 @@ export const Header = () => {
           onChange={(e) => setOwnership(e.target.value)}
         >
           <option value="" disabled>Вы владеете квартирой?</option>
-          <option value="option1">Да</option>
-          <option value="option2">Нет</option>
+          <option value="Да">Да</option>
+          <option value="Нет">Нет</option>
         </select>
 
-        <input
-          type="submit"
-          id="submit"
-          className="form__input form__input--submit"
-          value="Отправить"
-        />
+        <button type="submit" className="form__input form__input--submit">Отправить</button>
 
         <div className="cross" onClick={toggleForm}></div>
       </form>
+
+      {isModalVisible && (
+        <div className="modal">
+          <div className="modal__content">
+            <p>Спасибо! Данные отправлены, мы свяжемся с Вами в ближайшее время!</p>
+            <button onClick={closeModal} className="modal__close-button">Закрыть</button>
+          </div>
+        </div>
+      )}
     </>
   );
 };

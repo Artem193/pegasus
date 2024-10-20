@@ -16,19 +16,25 @@ export const Contacts = () => {
           <div className="contacts__list">
             <div className="contacts__contact">
               <div className="contacts__icon contacts__icon--location"></div>
-              <p className="contacts__text">Адрес: </p>
+              <a
+                href="https://maps.app.goo.gl/EaYT1kLxq2ameDpe6"
+                className="contacts__text"
+                target="_blank"
+              >
+                Адрес: Бикэт-Римон, 43
+              </a>
             </div>
             <div className="contacts__contact">
               <div className="contacts__icon contacts__icon--phone"></div>
-              <p className="contacts__text">Телефон: <a href="+972533454423" className="contacts__link">053-3454423</a></p>
+              <p className="contacts__text">Телефон: <a href="+972545991090" className="contacts__link">054-5991090</a></p>
             </div>
             <div className="contacts__contact">
               <div className="contacts__icon contacts__icon--wp"></div>
-              <p className="contacts__text">Whatsapp: <a href="https://wa.me/972533454423" className="contacts__link">053-3454423</a></p>
+              <p className="contacts__text">Whatsapp: <a href="https://wa.me/972545991090" className="contacts__link">054-5991090</a></p>
             </div>
             <div className="contacts__contact">
               <div className="contacts__icon contacts__icon--calendar"></div>
-              <p className="contacts__text">График работы: </p>
+              <p className="contacts__text">График работы: ВС - ЧТ 8:30 до 15:30​</p>
             </div>
           </div>
           <FormWhite />

@@ -71,7 +71,7 @@ export const Services = () => {
             <div className="services__description">
               <div className="services__image"></div>
               <p className="services__text">
-                таких как помощь детям, привлечение иностранного помощника для ухода за вами, ремонт дома или путешествия
+                Таких как помощь детям, привлечение иностранного помощника для ухода за вами, ремонт дома или путешествия
               </p>
             </div>
             <div className="services__description">

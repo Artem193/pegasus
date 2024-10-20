@@ -9,7 +9,7 @@ export const StatisticsFromCredit = () => {
       <div className="page__container">
         <div className="statisticsFromCredit__info">
           <ItemFromCredit
-            numbers='100%'
+            numbers='95%'
             text='Гарантии успеха'
           />
           <ItemFromCredit
@@ -17,12 +17,12 @@ export const StatisticsFromCredit = () => {
             text='Удовлетворённых клиентов'
           />
           <ItemFromCredit
-            numbers='100'
+            numbers='5'
             text='Миллиардов шекелей выданных кредитов'
           />
           <ItemFromCredit
-            numbers='100'
-            text='Лет работы'
+            numbers='2'
+            text='Года работы'
           />
         </div>
       </div>

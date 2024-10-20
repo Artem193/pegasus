@@ -19,14 +19,14 @@ export const Advantages = () => {
           <div className="advantages__img advantages__img--2"></div>
           <h2 className="advantages__subtitle">Группа высококвалифицированных экспертов</h2>
           <p className="advantages__description">
-            Профессиональная поддержка наших специалистов приведёт вас к успеху
+            Профессиональная поддержка наших специалистов приведёт Вас к успеху
           </p>
         </div>
         <div className="advantages__advantage">
           <div className="advantages__img advantages__img--3"></div>
           <h2 className="advantages__subtitle">Индивидуальный подход</h2>
           <p className="advantages__description">
-            Мы найдём для Вас оптимальное решение для достижения ваших финансовых целей
+            Мы найдём для Вас оптимальное решение для достижения Ваших финансовых целей
           </p>
         </div>
       </div>

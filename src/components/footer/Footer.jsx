@@ -15,16 +15,20 @@ export const Footer = () => {
             <h1 className="footer__contacts--title">Ашкелон</h1>
             <ul className="footer__contacts--list">
               <li className="footer__contact">
-                <a href="#" className="footer__contact--link">
-                  Адрес: ********
+                <a
+                  href="https://maps.app.goo.gl/EaYT1kLxq2ameDpe6"
+                  className="footer__contact--link"
+                  target="_blank"
+                >
+                  Адрес: Бикэт-Римон, 43
                 </a>
               </li>
               <li className="footer__contact">
                 <a
-                  href="tel:+972533454423"
+                  href="tel:+972545991090"
                   className="footer__contact--link"
                 >
-                  Телефон: 053-3454423
+                  Телефон: 054-5991090
                 </a>
               </li>
               <li className="footer__contact">

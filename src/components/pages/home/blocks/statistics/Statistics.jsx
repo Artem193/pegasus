@@ -9,7 +9,7 @@ export const Statistics = () => {
       <div className="page__container">
         <div className="statistics__info">
           <ItemFromStatistics
-            numbers='100%'
+            numbers='95%'
             text='Гарантии успеха'
           />
           <ItemFromStatistics
@@ -17,12 +17,12 @@ export const Statistics = () => {
             text='Удовлетворённых клиентов'
           />
           <ItemFromStatistics
-            numbers='100'
+            numbers='5'
             text='Миллиардов шекелей выданных кредитов'
           />
           <ItemFromStatistics
-            numbers='100'
-            text='Лет работы'
+            numbers='2'
+            text='Года работы'
           />
         </div>
       </div>

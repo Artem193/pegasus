@@ -173,7 +173,13 @@ export const Calculate = () => {
         <p className="calculate__subtitle">
           Детальная консультация по вопросам машканты!
         </p>
-        <button className="calculate__button">Получить бесплатно</button>
+        <a
+          href="https://wa.me/972545991090"
+          target="_blank"
+          className="calculate__button"
+        >
+          Получить бесплатно
+        </a>
       </div>
     </form>
   );
