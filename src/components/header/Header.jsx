@@ -348,7 +348,7 @@ export const Header = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <p className="number">053-5991090</p>
+        <p className="number">054-5991090</p>
       </a>
       {/* <a href="#" className="button button--wp"></a> */}
       <button className="button button--form" onClick={toggleForm}>
@@ -359,12 +359,12 @@ export const Header = () => {
           Оставьте контактные данные или позвоните нам
           <br />
           <a
-            href="tel:+972535991090"
+            href="tel:+972545991090"
             className="form__link"
             target="_blank"
             rel="noopener noreferrer"
           >
-            053-5991090
+            054-5991090
           </a>
         </p>
 
